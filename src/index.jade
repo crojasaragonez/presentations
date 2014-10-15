@@ -1,0 +1,82 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Working With Queues
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        h1 Working With Queues
+        p By Carlos Rojas
+        p Avantica
+
+      section
+        h2 What is a queue?
+        img(src='images/queue.jpeg')
+
+      section
+        h2 Why should I care about queues?
+
+      section
+        h2 Scalability
+        img(src='images/scalability.jpg')
+
+      section
+        h2 Vertical vs Horizontal
+
+      section
+        h2 The Work Queue Pattern
+        ul
+          li
+          li Work items may not be lost.
+          li Work must not be interrupted.
+          li Work items are independent of one-another.
+          li Work items may not be repeated.
+
+      section
+        h2 Common Use Cases
+        ul
+          li
+          li Decoupling heavy-weight processing from a live user request.
+          li Sending emails triggered by user actions
+          li Dividing work among multiple worker nodes
+
+      section
+        h2 Bad Practice
+        ul
+          li
+          li Using a database as queue
+
+      section
+        h2 Providers
+        ul
+          li
+          li <a href="http://www.rabbitmq.com/">RabbitMq</a>
+          li <a href="http://aws.amazon.com/sqs/">Amazon SQS</a>
+          li <a href="http://www.iron.io/mq">IronMq</a>
+
+      section
+        h2 DEMO
+        img(src='images/demo.jpg')
+
+      section
+        h2 Similar Patterns
+        ul
+          li
+          li Load distribution
+          li Relaxing of data constraints
+          li Parallelization
+
+      section
+        h2 Any Question?
+
+      section
+        h1 Thank You
+
+    script(src='build/build.js')
