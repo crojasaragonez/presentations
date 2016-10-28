@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../flexbox/css/reveal.min.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/css/theme/serif.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="../flexbox/imgs/go-labs.png">
+          <p>Serverless Architecture</p>
+          <small>28 de Octubre 2016</small>
+        </section>
+
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li class="fragment">Introducción</li>
+            <li class="fragment">Conceptos</li>
+            <li class="fragment">Ventajas</li>
+            <li class="fragment">Desventajas</li>
+            <li class="fragment">Proveedores</li>
+            <li class="fragment">Demo</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Conceptos Importantes</h2>
+          <li class="fragment">SaaS => Software as a service (Jira, Youtrack)</li>
+          <li class="fragment">PaaS => Platform as a service (Heroku, Engine Yard, Azure)</li>
+          <li class="fragment">IaaS => Infrastructure as a service (AWS, Azure)</li>
+          <li class="fragment">BaaS => Backend as a service (Firebase, Parse(rip)) </li>
+          <li class="fragment"><strong>FaaS => Function as a service</strong></li>
+        </section>
+
+        <section>
+          <h2>FaaS</h2>
+          <p>
+            Nos permite tener una funcion "hosteada" en un proveedor tercero.
+            Se podría decir que es una mejora de RPC(Remote Procedure Call)
+          </p>
+        </section>
+      </div>
+    </div>
+    <script type="text/javascript" src="../flexbox/lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../flexbox/js/reveal.min.js"></script>
+    <script>
+    'use strict';
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        dependencies: [
+          { src: '../../../../2015/I/produccion/presentation/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+  </body>
+</html>
