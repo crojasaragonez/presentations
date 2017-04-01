@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../flexbox/css/reveal.min.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/css/theme/serif.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="../flexbox/imgs/go-labs.png">
+          <p>Containerization Applied</p>
+          <small>April 1st 2017</small>
+        </section>
+
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li class="fragment">Historia</li>
+            <li class="fragment">¿Que es?</li>
+            <li class="fragment">¿Para qué nos sirve?</li>
+            <li class="fragment">¿Como puedo sacar provecho?</li>
+            <li class="fragment">Demo</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Historia</h2>
+          <h3>¿Como llegamos a la contenerización?</h3>
+        </section>
+
+        <section>
+          <h2>Servidores físicos</h2>
+          <ul>
+            <li class="fragment">Alto costo.</li>
+            <li class="fragment">Personal dedicado.</li>
+            <li class="fragment">Mantenimiento.</li>
+            <li class="fragment">Tiempo de vida.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Virtualización</h2>
+          <ul>
+            <li class="fragment">Aprovechamos mejor el hardware existente.</li>
+            <li class="fragment">VirtualBox.</li>
+            <li class="fragment">VMware.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Automatización de IT y Devops</h2>
+          <ul>
+            <li class="fragment">Mejores herramientas para el manejo y automatización de software.</li>
+            <li class="fragment">Chef</li>
+            <li class="fragment">Puppet.</li>
+            <li class="fragment">Ansible.</li>
+            <li class="fragment">Salt.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Contenerización</h2>
+        </section>
+
+        <section>
+          <h2>¿Que es?</h2>
+          <p>Permite virtualizar aplicaciones de software sin necesidad de tener maquinas virtuales completas</p>
+        </section>
+
+        <section>
+          <h2>Ventajas</h2>
+          <ul>
+            <li class="fragment">Los contenedores normalmente son bastante mas livianos.</li>
+            <li class="fragment">Nos permite correr aplicaciones completas sin instalar todas las dependencias en la máquina física.</li>
+            <li class="fragment">Fácil escalabilidad</li>
+            <li class="fragment">Soporte en la nube (Amazon EC2 Container Service)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Docker</h2>
+          <img src="imgs/docker.png">
+        </section>
+
+        <section>
+          <h2>Docker Hub</h2>
+          <p>Repositorio con gran cantidad de software contenerizado de fuentes oficiales, no oficiales, comunidades y privados.</p>
+        </section>
+
+        <section>
+          <h2>DockerFile</h2>
+          <p>Un archivo que contiene una "receta" de las cosas que debe llevar nuestro contenedor</p>
+        </section>
+
+        <section>
+          <h2>Docker compose</h2>
+          <p>Herramienta que nos permite "orquestar" y controlar uno o varios contenedores.</p>
+        </section>
+
+        <section>
+          <h1>DEMOS</h1>
+        </section>
+      </div>
+    </div>
+    <script type="text/javascript" src="../flexbox/lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../flexbox/js/reveal.min.js"></script>
+    <script>
+    'use strict';
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        dependencies: [
+          { src: '../../../../2015/I/produccion/presentation/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+  </body>
+</html>
