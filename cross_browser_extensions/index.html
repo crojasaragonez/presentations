@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../flexbox/css/reveal.min.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/css/theme/serif.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <img src="../flexbox/imgs/go-labs.png">
+          <p>Cross-browser extensions</p>
+          <small>27 de Octubre 2017</small>
+        </section>
+
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li class="fragment">Introducción</li>
+            <li class="fragment">Documentación oficial</li>
+            <li class="fragment">Aprender haciendo</li>
+            <li class="fragment">Primera extensión</li>
+            <li class="fragment">Segunda extensión</li>
+            <li class="fragment">Tercera extensión</li>
+            <li class="fragment">Distribuir Extensiones</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Documentación oficial</h2>
+          <p>
+            La documentación oficial se encuentra en: <a href="https://developer.mozilla.org/en-US/Add-ons/WebExtensions">https://developer.mozilla.org/en-US/Add-ons/WebExtensions</a><br>
+            Algunos ejemplos oficiales se pueden descargar aquí: <a href="https://github.com/mdn/webextensions-examples">https://github.com/mdn/webextensions-examples</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>Aprender haciendo</h2>
+          <ul>
+            <li class="fragment">La mejor forma de aprender tecnología.</li>
+            <li class="fragment">Construimos nuestro propio conocimiento.</li>
+            <li class="fragment">Pasamos el conocimiento a terceras personas.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Primera extensión</h2>
+          <p>
+            <strong>Requerimientos:</strong><br>
+            Desarrolle una extensión que cambie la forma del puntero del mouse y permita eliminar cualquier elemento de cualquier página web con un clic.
+          </p>
+        </section>
+
+        <section>
+          <h2>Segunda extensión</h2>
+          <p>
+            <strong>Requerimientos:</strong><br>
+            Desarrolle una extensión que permita tener a mano links que visitemos constantemente
+          </p>
+        </section>
+
+        <section>
+          <h2>Tercera extensión</h2>
+          <p>
+            <strong>Requerimientos:</strong><br>
+            Desarrolle una extensión que permita tener un cronómetro dentro del navegador
+          </p>
+        </section>
+
+        <section>
+          <h2>Distribuir Extensiones</h2>
+        </section>
+
+        <section>
+          <h2>¿Preguntas?</h2>
+        </section>
+
+        <section>
+          <h2>Gracias</h2>
+        </section>
+      </div>
+    </div>
+    <script type="text/javascript" src="../flexbox/lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../flexbox/js/reveal.min.js"></script>
+    <script>
+    'use strict';
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        dependencies: [
+          { src: '../../../../2015/I/produccion/presentation/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../../../../2015/I/produccion/presentation/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+  </body>
+</html>
