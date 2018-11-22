@@ -23,88 +23,116 @@
       <div class="slides">
         <section>
           <img src="../flexbox/imgs/go-labs.png">
-          <p>Serverless Architecture</p>
-          <small>28 de Octubre 2016</small>
+          <p>Containerization Applied</p>
+          <small>April 1st 2017</small>
         </section>
 
         <section>
           <h2>Agenda</h2>
+          <br>
           <ul>
-            <li class="fragment">Introducción</li>
-            <li class="fragment">¿Que es?</li>
-            <li class="fragment">Conceptos Importantes</li>
-            <li class="fragment">Ventajas</li>
-            <li class="fragment">Desventajas</li>
-            <li class="fragment">Proveedores</li>
-            <li class="fragment">Costos</li>
-            <li class="fragment">Demo</li>
+            <li class="fragment">Historia.</li>
+            <li class="fragment">¿Qué es?</li>
+            <li class="fragment">¿Para qué nos sirve?</li>
+            <li class="fragment">¿Cómo puedo sacar provecho?</li>
+            <li class="fragment">Demo.</li>
           </ul>
         </section>
 
         <section>
-          <h2>¿Que es?</h2>
+          <h2>Historia</h2>
+          <br>
+          <h4>¿Cómo llegamos a la contenerización?</h4>
+        </section>
+
+        <section>
+          <h2>Servidores Físicos</h2>
+          <br>
           <ul>
-            <li class="fragment">Una arquitectura que buscan evitar tener servidores 24/7 encendidos.</li>
-            <li class="fragment">Eliminan el tiempo ocioso de servidores.</li>
-            <li class="fragment">Alternativas a patrones de diseño como working queue.</li>
-            <li class="fragment">Busca reducir costos</li>
-            <li class="fragment">El desarrollador solo tiene que pensar en el código y no en servidores ni infraestructura.</li>
+            <li class="fragment">Alto costo.</li>
+            <li class="fragment">Personal dedicado.</li>
+            <li class="fragment">Mantenimiento.</li>
+            <li class="fragment">Tiempo de vida.</li>
           </ul>
         </section>
 
         <section>
-          <h2>Conceptos Importantes</h2>
+          <h2>Virtualización</h2>
+          <br>
           <ul>
-            <li class="fragment">SaaS => Software as a service (Jira, Youtrack)</li>
-            <li class="fragment">PaaS => Platform as a service (Heroku, Engine Yard, Azure)</li>
-            <li class="fragment">IaaS => Infrastructure as a service (AWS, Azure)</li>
-            <li class="fragment">BaaS => Backend as a service (Firebase, Parse(rip)) </li>
-            <li class="fragment">
-              <span class="fragment highlight-blue">FaaS</span>
-               => Function
-               <span class="fragment highlight-blue">as a service</span>
-            </li>
+            <li class="fragment">Aprovechamos mejor el hardware existente.</li>
+            <li class="fragment">VirtualBox.</li>
+            <li class="fragment">VMware.</li>
           </ul>
         </section>
 
         <section>
-          <h2>FaaS</h2>
+          <h3>Automatización de IT y Devops</h3>
+          <br>
           <ul>
-            <li class="fragment">Nos permite tener una función "hosteada" en un proveedor tercero.</li>
-            <li class="fragment">Se podría decir que es una mejora de RPC(Remote Procedure Call).</li>
-            <li class="fragment">Corren en ambientes de alto desempeño.</li>
+            <li class="fragment">Mejores herramientas para el manejo y automatización de software.</li>
+            <li class="fragment">Chef.</li>
+            <li class="fragment">Puppet.</li>
+            <li class="fragment">Ansible.</li>
+            <li class="fragment">Salt.</li>
           </ul>
         </section>
 
         <section>
-          <h2><img src="imgs/up.png" style="margin-bottom: 0px;"> Ventajas <img src="imgs/up.png" style="margin-bottom: 0px;"></h2>
+          <h2>Contenerización</h2>
+        </section>
+
+        <section>
+          <h2>¿Qué es?</h2>
+          <p>Permite virtualizar aplicaciones de software sin necesidad de tener máquinas virtuales completas.</p>
+        </section>
+
+        <section>
+          <h2>Ventajas</h2>
+          <br>
           <ul>
-            <li class="fragment">Obtenemos muy buen rendimiento a menor costo.</li>
-            <li class="fragment">Es tecnología verde porque ahorra horas de consumo de energía.</li>
+            <li class="fragment">Los contenedores normalmente son más livianos.</li>
+            <li class="fragment">Nos permite correr aplicaciones completas sin instalar todas las dependencias en la máquina física.</li>
+            <li class="fragment">Fácil escalabilidad.</li>
+            <li class="fragment">Soporte en la nube (Amazon EC2 Container Service).</li>
           </ul>
         </section>
 
         <section>
-
-          <h2><img src="imgs/down.png" style="margin-bottom: 0px;"> Desventajas <img src="imgs/down.png" style="margin-bottom: 0px;"></h2>
-          <ul>
-            <li class="fragment">Dependencia de terceros.</li>
-            <li class="fragment">Duplicación de código.</li>
-            <li class="fragment">¿Pruebas unitarias?.</li>
-          </ul>
+          <h2>Docker</h2>
+          <img src="imgs/docker.png">
         </section>
 
         <section>
-          <h2>Proveedores</h2>
-          <img src="./imgs/aws.png">
+          <h2>Docker Hub</h2>
+          <br>
+          <p>Repositorio con gran cantidad de software contenerizado de fuentes oficiales, no oficiales, comunidades y privados.</p>
         </section>
 
         <section>
-          <h2><a href="https://aws.amazon.com/lambda/pricing/" target="_blank">Costos</a></h2>
+          <h2>DockerFile</h2>
+          <br>
+          <p>Un archivo que contiene una <strong>"receta"</strong> de las cosas que debe llevar nuestro contenedor.</p>
+        </section>
+
+        <section>
+          <h2>Docker Compose</h2>
+          <br>
+          <p>Herramienta que nos permite <strong>"orquestar"</strong> y controlar uno o varios contenedores.</p>
         </section>
 
         <section>
           <h1>DEMO</h1>
+        </section>
+
+        <section>
+          <h1>¿Preguntas?</h1>
+        </section>
+
+        <section>
+          <img src="../flexbox/imgs/go-labs.png">
+          <p>Containerization Applied</p>
+          <small>April 1st 2017</small>
         </section>
       </div>
     </div>
