@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../flexbox/css/reveal.min.css">
     <link rel="stylesheet" type="text/css" href="../flexbox/css/theme/serif.css">
     <link rel="stylesheet" type="text/css" href="../flexbox/lib/css/zenburn.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- If the query includes 'print-pdf', include the PDF print sheet -->
     <script>
@@ -23,11 +24,30 @@
       <div class="slides">
         <section>
           <h2>Web Workers</h2>
-          <small>23 de Noviembre 2018</small>
+          <small>November 23rd 2018</small>
         </section>
 
         <section>
-          <img src="../flexbox/imgs/go-labs.png">
+          <div class="flex-container">
+            <div>
+              <img src="imgs/pic.jpg" width="336px">
+            </div>
+            <div id="my-contact">
+              <pre><code>
+{
+  "name": "Carlos Luis Rojas Aragonés",
+  "email": "crojas@go-labs.net",
+  "github": "crojasaragonez",
+  "gitlab": "crojas",
+  "linkedin": "crojasaragonez",
+  "jobs": [
+    "CTO and Co-founder => Go-Labs",
+    "Professor => Universidad Técnica Nacional"
+  ],
+}
+                </code></pre>
+            </div>
+          </div>
         </section>
 
         <section>
@@ -68,11 +88,9 @@
 
         <section>
           <h2>My first web worker</h2>
-          <pre>
-            <code data-trim data-noescape>
+          <pre><code data-trim data-noescape>
               let worker = new Worker('worker.js');
-            </code>
-          </pre>
+          </code></pre>
         </section>
 
         <section>
@@ -81,8 +99,7 @@
 
         <section>
           <h3>main.js</h3>
-          <pre>
-            <code>
+          <pre><code>
               let worker = new Worker('worker.js');
               worker.onmessage = (event) => {
                 //Do stuff
@@ -90,21 +107,18 @@
 
               let msg = {}
               worker.postMessage(msg);
-            </code>
-          </pre>
+          </code></pre>
         </section>
 
         <section>
           <h3>worker.js</h3>
-          <pre>
-            <code>
+          <pre><code>
               self.onmessage = (event) => {
                 //Do stuff
                 let msg = {}
                 self.postMessage(msg);
               }
-            </code>
-          </pre>
+          </code></pre>
         </section>
 
         <section>
