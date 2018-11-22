@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../flexbox/css/reveal.min.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/css/theme/serif.css">
+    <link rel="stylesheet" type="text/css" href="../flexbox/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Web Workers</h2>
+          <small>23 de Noviembre 2018</small>
+        </section>
+
+        <section>
+          <img src="../flexbox/imgs/go-labs.png">
+        </section>
+
+        <section>
+          <h2>Agenda</h2>
+          <ul>
+            <li class="fragment">Javascript Single Thread Architecture</li>
+            <li class="fragment">Sequential vs Concurrent vs Parallel</li>
+            <li class="fragment">My first web worker</li>
+            <li class="fragment">Even/Message communication</li>
+            <li class="fragment">Limitations</li>
+            <li class="fragment">Demo</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Javascript Single Thread Architecture</h2>
+        </section>
+
+        <section>
+          <img src="./imgs/event_loop.png">
+        </section>
+
+        <section>
+          <h2>Sequential vs Concurrent vs Parallel</h2>
+        </section>
+
+        <section>
+          <img src="imgs/sequential.png">
+        </section>
+
+        <section>
+          <img src="imgs/concurrent.png">
+        </section>
+
+        <section>
+          <img src="imgs/parallel.png">
+        </section>
+
+        <section>
+          <h2>My first web worker</h2>
+          <pre>
+            <code data-trim data-noescape>
+              let worker = new Worker('worker.js');
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Even/Message communication</h2>
+        </section>
+
+        <section>
+          <h3>main.js</h3>
+          <pre>
+            <code>
+              let worker = new Worker('worker.js');
+              worker.onmessage = (event) => {
+                //Do stuff
+              };
+
+              let msg = {}
+              worker.postMessage(msg);
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h3>worker.js</h3>
+          <pre>
+            <code>
+              self.onmessage = (event) => {
+                //Do stuff
+                let msg = {}
+                self.postMessage(msg);
+              }
+            </code>
+          </pre>
+        </section>
+
+        <section>
+          <h2>Limitations</h2>
+          <ul>
+            <li class="fragment">We can't access the DOM from them.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Demo</h2>
+          <table style="margin: auto">
+            <tr>
+              <td>RealTime</td>
+              <td>+</td>
+              <td>MultiPlayer</td>
+              <td>+</td>
+              <td>EventSource</td>
+            </tr>
+            <tr>
+              <td>Web Workers</td>
+              <td>+</td>
+              <td>Ruby</td>
+              <td>+</td>
+              <td>Sinatra</td>
+            </tr>
+            <tr>
+              <td>Html5</td>
+              <td>+</td>
+              <td>Css3</td>
+              <td>+</td>
+              <td>Tone.js</td>
+            </tr>
+          </table>
+        </section>
+      </div>
+    </div>
+    <script type="text/javascript" src="../flexbox/lib/js/head.min.js"></script>
+    <script type="text/javascript" src="../flexbox/js/reveal.min.js"></script>
+    <script>
+    'use strict';
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        dependencies: [
+          { src: '../flexbox/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../flexbox/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../flexbox/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../flexbox/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../flexbox/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../flexbox/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: '../flexbox/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+        ]
+      });
+
+    </script>
+  </body>
+</html>
