@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>Graphql</title>
+    <meta name="description" content="WebSlides Cheat Sheet. A quick reference guide for beginners. This tutorial contains hundreds of HTML/CSS examples.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="./static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="./static/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <meta property="og:url" content="http://your-url.com/permalink" /> <!-- YOUR URL/PERMALINK -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="WebSlides Documentation: Classes" /> <!-- EDIT -->
+    <meta property="og:description" content="A quick reference guide. This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-01-04T17:23:46"> <!-- EDIT -->
+    <meta property="og:image" content="./static/images/share-webslides.jpg" > <!-- EDIT -->
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
+    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
+    <meta name="twitter:title" content="WebSlides Documentation: Classes"> <!-- EDIT -->
+    <meta name="twitter:description" content="WebSlides Cheat Sheet.This tutorial contains hundreds of HTML/CSS examples."> <!-- EDIT -->
+    <meta name="twitter:image" content="./static/images/share-webslides.jpg"> <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="./static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="./static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="./static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="./static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="./static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="./static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="./static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="bg-black-blue aligncenter">
+         <span class="background dark" style="background-image:url('https://source.unsplash.com/6njoEbtarec/')"></span>
+          <!--.wrap = container (width: 90%) with fadein animation -->
+          <div class="wrap">
+            <p class="text-subtitle">Carlos Luis Rojas Aragonés</p>
+            <h1 class="text-landing">Graphql</h1>
+            <p class="text-subtitle">Noviembre 2019</p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+                <section class="aligncenter">
+          <!--.wrap = container (width: 90%) with fadein animation -->
+          <div class="wrap">
+            <h2>Información básica</h2>
+            <div class="grid">
+              <div class="column">
+                <h6>¿Qué es?</h6>
+                <p>
+                  Es un lenguaje de consultas para APIs web que se enfoca en la descripción y transmisión eficiente de datos atraves del protocolo http.
+                </p>
+              </div>
+              <!-- end .column -->
+              <div class="column">
+                <h6>Historia</h6>
+                <p>
+                  Las especificaciones de GraphQL fueron creadas en Facebook en el 2012 y puestas a prueba en las aplicaciones móviles.
+                  En el 2015 Facebook liberó las especificaciones al público y ahora está disponible en muchos lenguajes y frameworks de desarrollo web.
+                </p>
+              </div>
+              <!-- end .column -->
+              <div class="column">
+                <h6>¿Porqué debería interesarme?</h6>
+                <p>
+                  Graphql tiene ventajas en rendimiento y simplicidad comparado con otras alternativas clásicas como REST y SOAP.
+                  Además de ser usado por grandes compañías como <strong>Github</strong>, <strong>Twitter</strong>, <strong>Airbnb</strong> entre otros muchos más.
+                </p>
+              </div>
+              <!-- end .column -->
+            </div>
+            <!-- end .grid -->
+          </div>
+          <!-- end .wrap -->
+        </section>
+        <section>
+          <div class="aligncenter">
+            <h2>REST vs Graphql</h2>
+          </div>
+        </section>
+        <section>
+          <div class="wrap size-50">
+            <h2>
+              Rest (CRUD de un vehículo.)
+            </h2>
+            <hr>
+            <ul class="description">
+              <li><span class="text-label">GET:</span> /vehiculos[?color=rojo]</li>
+              <li><span class="text-label">GET:</span> /vehiculos/<strong>1</strong></li>
+              <li><span class="text-label">POST:</span> /vehiculos</li>
+              <li><span class="text-label">PUT | PATCH:</span> /vehiculos/<strong>1</strong></li>
+              <li><span class="text-label">DELETE:</span> /vehiculos/<strong>1</strong></li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap size-50">
+            <h2>
+              Rest (Detalles de un vehículo.)
+            </h2>
+            <hr>
+            <ul class="description">
+              <li><span class="text-label">GET:</span> /vehiculos/<strong>1</strong>/propietario</li>
+              <li><span class="text-label">GET:</span> /vehiculos/<strong>1</strong>/mantenimientos</li>
+              <li><span class="text-label">GET:</span> /vehiculos/<strong>1</strong>/detalles</li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap size-60">
+            <h3>Graphql</h3>
+            <pre>
+type Query
+type Mutation
+            </pre>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-intro">Servidor</p>
+                <pre>
+extend type Query {
+    vehicles: [Vehicle!]!
+    vehicle(id: ID!): Vehicle
+}
+
+type Vehicle {
+    id: ID!
+    plate_number: String!
+    color: String!
+    manufacturer: String!
+    model: String!
+    transmission: String!
+    body_type: String!
+    mileage: Float!
+    year: String!
+}
+                </pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-intro">Cliente</p>
+                <pre>
+query{
+  vehicles{
+    data{
+      manufacturer
+      mileage
+    }
+  }
+}
+                </pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <!-- .end .column -->
+              <div class="column">
+                <p class="text-intro">Respuesta</p>
+                <pre>
+{
+  "data": {
+    "vehicles": {
+      "data": [
+        {
+          "manufacturer": "Nissan",
+          "mileage": 868767
+        },
+        ...
+      ]
+    }
+  }
+}
+                </pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-intro">Servidor</p>
+                <pre>
+extend type Mutation {
+    createVehicle(
+        plate_number: String!
+        color: String!
+        manufacturer: String!
+        model: String!
+        transmission: String!
+        mileage: Float!
+        year: String!
+    ): Vehicle! @create
+
+    updateVehicle(
+        plate_number: String!
+        color: String!
+        manufacturer: String!
+        model: String!
+        transmission: String!
+        mileage: Float!
+        year: String!
+    ): Vehicle @update
+
+    deleteVehicle(id: ID!): Vehicle @delete
+}
+                </pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-intro">Cliente</p>
+                <pre>
+mutation{
+  createVehicle(
+    plate_number: "SDK-200"
+    color: "Azul"
+    manufacturer: "Chevrolet"
+    model: "Aveo"
+    transmission: "Manual"
+    mileage: 60000
+    year: "2014"
+  ){
+    id
+  }
+}
+                </pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <!-- .end .column -->
+              <div class="column">
+                <p class="text-intro">Respuesta</p>
+                <pre>
+{
+  "data": {
+    "createVehicle": {
+      "id": "101"
+    }
+  }
+}
+                </pre>
+              </div>
+              <!-- .end .column -->
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="aligncenter">
+          <!--.wrap = container (width: 90%) with fadein animation -->
+          <div class="wrap">
+            <h2><strong>Ventajas</strong></h2>
+            <ul class="flexblock border">
+              <li>
+                <div>
+                  <h3>Menos código</h3>
+                  <p>
+                    El código necesario para lograr operaciones CRUD es <strong>0</strong>
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Transmisión eficiente</h3>
+                  <p>
+                    El cliente únicamente pide lo que nececita, nada mas, nada menos.
+                    Además de que puede combinar múltiples datos en una sola respuesta.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Documentación viva</h3>
+                  <p>
+                    Los clientes pueden explorar por ellos mismos las capacidades del API y formar sus propias consultas de una manera muy flexible.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Disponible en muchos lenguajes</h3>
+                  <ol>
+                    <li><a target="_blank" href="">Ruby</a></li>
+                    <li><a target="_blank" href="">PHP</a></li>
+                    <li><a target="_blank" href="">C#</a></li>
+                    <li><a target="_blank" href="">Java</a></li>
+                    <li><a target="_blank" href="">JavaScript</a></li>
+                    <li><a target="_blank" href="">Go</a></li>
+                    <li><a target="_blank" href="">Python</a></li>
+                    <li><a target="_blank" href="">Etc...</a></li>
+                  </ol>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <img class="alignleft size-30" src="./../working_with_queues/src/images/demo.jpg" alt="Demo">
+            <a href="http://localhost:8000/graphql-playground" target="_blank"><h2>Demo</h2></a>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="aligncenter">
+          <div class="wrap">
+            <h1 class="text-landing">Gracias</h1>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+      </article>
+    </main>
+    <!--main-->
+
+    <!-- Required -->
+    <script src="./static/js/webslides.js"></script>
+
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="./static/js/svg-icons.js"></script>
+
+  </body>
+</html>
