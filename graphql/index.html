@@ -117,6 +117,41 @@
         </section>
         <section>
           <div class="aligncenter">
+            <h2>Language Agnostic</h2>
+            <ul class="flexblock border">
+              <li>
+                <div>
+                  <h3>Servidor</h3>
+                  <ol>
+                    <li><a target="_blank" href="">Ruby</a></li>
+                    <li><a target="_blank" href="">PHP</a></li>
+                    <li><a target="_blank" href="">C#</a></li>
+                    <li><a target="_blank" href="">Java</a></li>
+                    <li><a target="_blank" href="">JavaScript</a></li>
+                    <li><a target="_blank" href="">Go</a></li>
+                    <li><a target="_blank" href="">Python</a></li>
+                    <li><a target="_blank" href="">Etc...</a></li>
+                  </ol>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h3>Cliente</h3>
+                  <ol>
+                    <li><a target="_blank" href="">Apollo (React, Vue, Angular)</a></li>
+                    <li><a target="_blank" href="">Relay (React)</a></li>
+                    <li><a target="_blank" href="">Java</a></li>
+                    <li><a target="_blank" href="">Kotlin</a></li>
+                    <li><a target="_blank" href="">Swift</a></li>
+                    <li><a target="_blank" href="">Etc...</a></li>
+                  </ol>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="aligncenter">
             <h2>REST vs Graphql</h2>
           </div>
         </section>
@@ -167,7 +202,7 @@ type Mutation
               <div class="column">
                 <p class="text-intro">Servidor</p>
                 <pre>
-extend type Query {
+type Query {
     vehicles: [Vehicle!]!
     vehicle(id: ID!): Vehicle
 }
@@ -197,8 +232,8 @@ type Vehicle {
               <div class="column">
                 <p class="text-intro">Cliente</p>
                 <pre>
-query{
-  vehicles{
+query($first: Int!) {
+  vehicles(first: $first) {
     data{
       manufacturer
       mileage
@@ -211,6 +246,36 @@ query{
             </div>
           </div>
           <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <p class="text-intro">Request HTTP</p>
+                <pre>
+    await fetch("http://localhost:8000/graphql", {
+    "headers": {
+        "content-type": "application/json",
+        "authorization": "Bearer token_here"
+    },
+    "body": "{
+      "variables":{"first":10},
+      "query":"{
+        vehicles {
+          data {
+            manufacturer
+            mileage
+          }
+        }
+      }
+      "
+    }",
+    "method": "POST"
+    });
+                </pre>
+              </div>
+            </div>
+          </div>
         </section>
         <section>
           <!--.wrap = container (width: 90%) -->
@@ -247,27 +312,20 @@ query{
               <div class="column">
                 <p class="text-intro">Servidor</p>
                 <pre>
-extend type Mutation {
-    createVehicle(
-        plate_number: String!
-        color: String!
-        manufacturer: String!
-        model: String!
-        transmission: String!
-        mileage: Float!
-        year: String!
-    ): Vehicle! @create
 
-    updateVehicle(
-        plate_number: String!
-        color: String!
-        manufacturer: String!
-        model: String!
-        transmission: String!
-        mileage: Float!
-        year: String!
-    ): Vehicle @update
+type VehicleInput {
+  plate_number: String!
+  color: String!
+  manufacturer: String!
+  model: String!
+  transmission: String!
+  mileage: Float!
+  year: String!
+}
 
+type Mutation {
+    createVehicle(input: VehicleInput): Vehicle! @create
+    updateVehicle(id: ID!, input: VehicleInput): Vehicle @update
     deleteVehicle(id: ID!): Vehicle @delete
 }
                 </pre>
@@ -284,15 +342,17 @@ extend type Mutation {
               <div class="column">
                 <p class="text-intro">Cliente</p>
                 <pre>
-mutation{
+mutation {
   createVehicle(
-    plate_number: "SDK-200"
-    color: "Azul"
-    manufacturer: "Chevrolet"
-    model: "Aveo"
-    transmission: "Manual"
-    mileage: 60000
-    year: "2014"
+    input: {
+      plate_number: "SDK-200"
+      color: "Azul"
+      manufacturer: "Chevrolet"
+      model: "Aveo"
+      transmission: "Manual"
+      mileage: 60000
+      year: "2014"
+    }
   ){
     id
   }
@@ -333,10 +393,13 @@ mutation{
             <ul class="flexblock border">
               <li>
                 <div>
-                  <h3>Menos código</h3>
-                  <p>
-                    El código necesario para lograr operaciones CRUD es <strong>0</strong>
-                  </p>
+                  <h3>Simple</h3>
+                  <ul>
+                    <li>0 líneas de código para generar cruds.</li>
+                    <li>Una sola ruta.</li>
+                    <li>Un solo verbo HTTP</li>
+                    <li>Equipo del cliente require mínima ayuda del equipo del Backend</li>
+                  </ul>
                 </div>
               </li>
               <li>
