@@ -22,79 +22,85 @@
     <div class="reveal">
       <div class="slides">
         <section>
-          <img src="../flexbox/imgs/go-labs.png">
+          <img src="./imgs/logo.png">
           <p>Containerization Applied</p>
-          <small>April 1st 2017</small>
+          <small>November 2020</small>
         </section>
 
         <section>
           <h2>Agenda</h2>
           <br>
           <ul>
-            <li class="fragment">Historia.</li>
-            <li class="fragment">¿Qué es?</li>
-            <li class="fragment">¿Para qué nos sirve?</li>
-            <li class="fragment">¿Cómo puedo sacar provecho?</li>
+            <li class="fragment">History.</li>
+            <li class="fragment">What is it?</li>
+            <li class="fragment">What can I use it for?</li>
+            <li class="fragment">How can I take advantage of it?</li>
             <li class="fragment">Demo.</li>
           </ul>
         </section>
 
         <section>
-          <h2>Historia</h2>
+          <h2>History</h2>
           <br>
-          <h4>¿Cómo llegamos a la contenerización?</h4>
+          <h4>¿How did we get there?</h4>
         </section>
 
         <section>
-          <h2>Servidores Físicos</h2>
+          <h2>On-premises server</h2>
           <br>
           <ul>
-            <li class="fragment">Alto costo.</li>
-            <li class="fragment">Personal dedicado.</li>
-            <li class="fragment">Mantenimiento.</li>
-            <li class="fragment">Tiempo de vida.</li>
+            <li class="fragment">VERY Expensive.</li>
+            <li class="fragment">Dedicated people working on it.</li>
+            <li class="fragment">Maintenance.</li>
+            <li class="fragment">They become garbage in a few years.</li>
+            <li class="fragment">Ecological footprint.</li>
           </ul>
         </section>
 
         <section>
-          <h2>Virtualización</h2>
+          <h2>Virtualization</h2>
           <br>
           <ul>
-            <li class="fragment">Aprovechamos mejor el hardware existente.</li>
+            <li class="fragment">Let's use our existing hardware.</li>
             <li class="fragment">VirtualBox.</li>
             <li class="fragment">VMware.</li>
+            <li class="fragment">Hyper-V.</li>
           </ul>
         </section>
 
         <section>
-          <h3>Automatización de IT y Devops</h3>
+          <h3>IT automation and Devops</h3>
           <br>
           <ul>
-            <li class="fragment">Mejores herramientas para el manejo y automatización de software.</li>
+            <li class="fragment">Better tools to save time.</li>
             <li class="fragment">Chef.</li>
             <li class="fragment">Puppet.</li>
             <li class="fragment">Ansible.</li>
             <li class="fragment">Salt.</li>
+            <li class="fragment">Terraform.</li>
           </ul>
         </section>
 
         <section>
-          <h2>Contenerización</h2>
+          <h2>Containerization</h2>
+          <br>
+          <p>The "new" kid in the block, since ~2014</p>
         </section>
 
         <section>
-          <h2>¿Qué es?</h2>
-          <p>Permite virtualizar aplicaciones de software sin necesidad de tener máquinas virtuales completas.</p>
+          <h2>What is it?</h2>
+          <p>It allow us to virtualize applications no matter the techbology or if we have installed a single programming language in our current machine.</p>
         </section>
 
         <section>
-          <h2>Ventajas</h2>
+          <h2>Advantages</h2>
           <br>
           <ul>
-            <li class="fragment">Los contenedores normalmente son más livianos.</li>
-            <li class="fragment">Nos permite correr aplicaciones completas sin instalar todas las dependencias en la máquina física.</li>
-            <li class="fragment">Fácil escalabilidad.</li>
-            <li class="fragment">Soporte en la nube (Amazon EC2 Container Service).</li>
+            <li class="fragment">Containers are normally very light weight (MB and not GB).</li>
+            <li class="fragment">We can run entire and very complex apps in minutes and not hours.</li>
+            <li class="fragment">Built to scale.</li>
+            <li class="fragment">Main cloud providers already support containers (AWS, Azure, GCP).</li>
+            <li class="fragment">You could deploy hundred or even thousand servers with a single command line when you integrate it with kubernetes.</li>
           </ul>
         </section>
 
@@ -106,19 +112,30 @@
         <section>
           <h2>Docker Hub</h2>
           <br>
-          <p>Repositorio con gran cantidad de software contenerizado de fuentes oficiales, no oficiales, comunidades y privados.</p>
+          <p>
+            A huge container repository with official and no official software in then. <br>
+            The github equivalent for containers
+          </p>
         </section>
 
         <section>
           <h2>DockerFile</h2>
           <br>
-          <p>Un archivo que contiene una <strong>"receta"</strong> de las cosas que debe llevar nuestro contenedor.</p>
+          <p>
+            This file is a <strong>"recipe"</strong> of all things that our container needs to run our software.
+          </p>
         </section>
 
         <section>
           <h2>Docker Compose</h2>
           <br>
-          <p>Herramienta que nos permite <strong>"orquestar"</strong> y controlar uno o varios contenedores.</p>
+          <p>A powerful tool that allow us to <strong>"orchestrate"</strong> and control every single container as part of an environment</p>
+        </section>
+
+        <section>
+          <h2>Docker Stack</h2>
+          <br>
+          <p>A Docker Compose alternative to Docker Compose that comes installed when you install docker.</p>
         </section>
 
         <section>
@@ -126,13 +143,13 @@
         </section>
 
         <section>
-          <h1>¿Preguntas?</h1>
+          <h1>Question?</h1>
         </section>
 
         <section>
-          <img src="../flexbox/imgs/go-labs.png">
+          <img src="./imgs/logo.png">
           <p>Containerization Applied</p>
-          <small>April 1st 2017</small>
+          <small>November 2020</small>
         </section>
       </div>
     </div>
