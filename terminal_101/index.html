@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Terminal 101</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Terminal 101</h3>
+					<p>
+						<small>By <a href="https://github.com/crojasaragonez">Carlos Luis Rojas Aragonés</a></small>
+					</p>
+					<p>
+						<small>Golabs 2021</small>
+					</p>
+				</section>
+				<section>Collection of tips and tricks</section>
+				<section data-auto-animate>
+					<h2>.bashrc</h2>
+					<p>.bashrc file is executed everytime you open a bash terminal</p>
+				</section>
+				<section data-auto-animate>
+					<h2>Text Editors</h2>
+					<ul>
+						<li>Vim (Installed in every lixux distribution)</li>
+						<li>Emacs (Vim alternative)</li>
+						<li>Nano (Simple cli editor)</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Text Tools</h2>
+					<ul>
+						<li>cat (prints files)</li>
+						<li>tail (prints last N lines of a file)</li>
+						<li>head (prints firts N lines of a file)</li>
+						<li>less (reads the content of a file)</li>
+						<li>sed (search and replaces text within files)</li>
+						<li>grep (finds text within files)</li>
+						<li>awk (helps formatting terminal output)</li>
+						<li>locate (finds any file in hard disk in seconds)</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Piping</h2>
+					<p>Transfer output of a tool to some other destination or tool</p>
+					<pre data-id="code-animation"><code class="bash" data-trim data-line-numbers>
+						echo 'Hello world' | sed 's/world/World/i' #Hello World
+						echo 'Hello world' | sed 's/world/World/i' | base64 #SGVsbG8gV29ybGQK
+						echo 'SGVsbG8gV29ybGQK' | base64 --decode #Hello World
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2>History</h2>
+					<ul>
+						<li>history and .history files</li>
+						<li>Search previous command with Ctrl + Shilf + r</li>
+						<li>!$ => Last word of previous command</li>
+						<li>!! => previous command</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Aliases</h2>
+					<pre data-id="code-animation"><code class="bash" data-trim data-line-numbers>
+						alias pmo='cd ~/src/golabs/pmo/'
+						alias mp3='youtube-dl --extract-audio --audio-format mp3 '
+						alias sail='bash vendor/bin/sail'
+						alias commits_by_user='git shortlog -s -n --all --no-merges'
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2>Other Geek Utilities</h2>
+					<ul>
+						<li>Calendar (cal)</li>
+						<li>Http clients (curl, wget)</li>
+						<li>Music players (mocp)</li>
+						<li>Browsers (lynx)</li>
+						<li>Out of the box file converters (convert)</li>
+					</ul>
+				</section>
+				<section data-auto-animate>
+					<h2>Thanks</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
