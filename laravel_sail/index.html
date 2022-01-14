@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Laravel Sail</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Laravel Sail</h3>
+					<p>
+						<small><a href="https://github.com/crojasaragonez">Carlos Luis Rojas Aragonés</a></small>
+					</p>
+					<p>
+						<small>Golabs 2022</small>
+					</p>
+				</section>
+				<section>
+					<img src="./imgs/logomark.min.svg">
+					<img src="./imgs/logotype.min.svg">
+				</section>
+				<section>
+					<img src="./imgs/docker.png">
+				</section>
+				<section data-auto-animate>
+					<h3>Docker Compose</h3>
+					<pre data-id="code-animation"><code class="yaml" data-trim data-line-numbers>
+version: '3.1'
+services:
+  web:
+    image: odoo:14.0
+    depends_on:
+      - db
+    ports:
+      - "8069:8069"
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=odoo
+      - POSTGRES_USER=odoo
+
+					</code></pre>
+				</section>
+				<section data-auto-animate>
+					<h2>Laravel sail</h2>
+					<h2>👇</h2>
+					<p>Laravel + Docker + Docker Compose</p>
+				</section>
+				<section data-auto-animate>
+					<h3>Getting started</h3>
+					<img src="./imgs/cli.svg">
+				</section>
+				<section>
+					<h2>Sail Services</h2>
+					<table>
+						<tr>
+							<td>
+								<ul>
+									<li>Mysql</li>
+									<li>Postgres</li>
+									<li>MariaDB</li>
+									<li>Redis</li>
+									<li>Memcached</li>
+								</ul>
+							</td>
+							<td>
+								<ul>
+									<li>MeiliSearch</li>
+									<li>MinIO</li>
+									<li>Selenium</li>
+									<li>MailHog</li>
+									<li>Many more...</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</section>
+				<section data-auto-animate>
+					<img src="./imgs/linus_quote.svg">
+					<h2>😎</h2>
+				</section>
+				<section data-auto-animate>
+					<h2>🙋 Questions?</h2>
+				</section>
+				<section data-auto-animate>
+					<h2>Thanks</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
