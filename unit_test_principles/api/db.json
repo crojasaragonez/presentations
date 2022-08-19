@@ -1,0 +1,14 @@
+{
+  "elements": [
+    { "id": 1, "name": "Gold", "symbol": "Au" },
+    { "id": 2, "name": "Copper", "symbol": "Cu" },
+    { "id": 3, "name": "Zinc", "symbol": "Zn" },
+    { "id": 4, "name": "Nickel", "symbol": "Ni" },
+    { "id": 5, "name": "Cobalt", "symbol": "Co" },
+    { "id": 6, "name": "Iron", "symbol": "Fe" },
+    { "id": 7, "name": "Chromium", "symbol": "Cr" },
+    { "id": 8, "name": "Silver", "symbol": "Ag" },
+    { "id": 9, "name": "Titanium", "symbol": "Ti" },
+    { "id": 10, "name": "Palladium", "symbol": "Pd" }
+  ]
+}
