@@ -36,7 +36,7 @@
       class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
       v-model="localProject.description"
     ></textarea>
-    <h3 class="font-bold">Members:</h3>
+    <h3 class="font-bold mt-2">{{ localProject.members.length }} Members:</h3>
     <div class="flex flex-wrap pb-2" v-auto-animate>
       <div
         :key="`m-${member.id}`"
@@ -50,7 +50,9 @@
         ></ConfirmDelete>
       </div>
     </div>
-    <h3 class="font-bold">Technologies:</h3>
+    <h3 class="font-bold">
+      {{ localProject.technologies.length }} Technologies:
+    </h3>
     <TechnologyPicker @technologyAdded="technologyAdded"></TechnologyPicker>
     <div class="flex flex-wrap pb-2" v-auto-animate>
       <div
