@@ -40,7 +40,7 @@
     <div class="flex flex-wrap pb-2" v-auto-animate>
       <div
         :key="`m-${member.id}`"
-        class="flex px-3 py-1 mr-2 text-teal-500 border-2 border-teal-500 rounded-xl"
+        class="flex px-3 py-1 mr-2 text-teal-500 border-2 border-teal-500 rounded-xl mt-1"
         v-for="member in localProject.members"
       >
         {{ member.user.name }}
