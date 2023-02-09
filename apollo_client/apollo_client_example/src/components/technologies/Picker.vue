@@ -5,7 +5,7 @@
     list="technologies"
     v-model="technology"
     @change="selected"
-    placeholder="Search Technology here"
+    placeholder="Add Technologies here"
   />
   <datalist id="technologies">
     <option
