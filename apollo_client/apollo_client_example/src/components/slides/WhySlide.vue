@@ -9,6 +9,6 @@
         >Here</a
       >
     </h3>
-    <img class="w-1/2 m-auto" src="/state_of_graphql.png" />
+    <img class="w-8/12 m-auto" src="/state_of_graphql.png" />
   </div>
 </template>
