@@ -38,7 +38,9 @@ mutation {
       <summary class="block cursor-pointer">
         <div class="py-2">
           <h1 class="text-2xl font-bold">Variables</h1>
-          <h3>They allow you pass diferent values to the same query/mutation.</h3>
+          <h3>
+            They allow you pass diferent values to the same query/mutation.
+          </h3>
         </div>
       </summary>
       <pre>
@@ -67,7 +69,7 @@ query (<span class="font-bold text-teal-500">$name: String</span>) {
           </h3>
         </div>
       </summary>
-            <pre>
+      <pre>
           <code class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white">
 mutation ($id: ID!, $project: <span class="font-bold text-teal-500">ProjectInput!</span>) {
   updateProject(id: $id, input: $project) {
@@ -101,16 +103,18 @@ const PROJECT_FRAGMENT = gql`
   }
 `;
 </span>
-query ($name: String) {
-  projects(name: $name) {
-    paginatorInfo {
-      hasMorePages
-    }
-    data {
-      <span class="font-bold text-teal-500">...project</span>
+const query = gql`
+  query ($name: String) {
+    projects(name: $name) {
+      paginatorInfo {
+        hasMorePages
+      }
+      data {
+        <span class="font-bold text-teal-500">...project</span>
+      }
     }
   }
-}
+`;
 <span class="font-bold text-teal-500">${PROJECT_FRAGMENT}</span>
       </code>
     </pre>
@@ -120,7 +124,9 @@ query ($name: String) {
       <summary class="block cursor-pointer">
         <div class="py-2">
           <h1 class="text-2xl font-bold">Aliases</h1>
-          <h3>Renaming existing queries and/or fields for readability purposes.</h3>
+          <h3>
+            Renaming existing queries and/or fields for readability purposes.
+          </h3>
         </div>
       </summary>
       <pre>
