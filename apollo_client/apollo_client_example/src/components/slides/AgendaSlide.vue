@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <div class="py-2">
       <h1 class="text-2xl font-bold">Why Apollo?</h1>
-      <h3>Why you should pick apollo over any other lib in 2023?</h3>
+      <h3>Why you should pick Apollo over any other lib in 2023?</h3>
     </div>
     <hr />
     <div class="py-2">

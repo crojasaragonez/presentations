@@ -39,7 +39,7 @@ mutation {
         <div class="py-2">
           <h1 class="text-2xl font-bold">Variables</h1>
           <h3>
-            They allow you pass diferent values to the same query/mutation.
+            They allow you pass different values to the same query/mutation.
           </h3>
         </div>
       </summary>
