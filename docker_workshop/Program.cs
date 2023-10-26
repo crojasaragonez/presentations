@@ -12,9 +12,9 @@ namespace DockerWorkshow
     static void Main(string[] args) {
 
       var envVars = DotEnv.Read();
-      
+
       var factory = new ConnectionFactory() { HostName = envVars["RABBITMQ_HOST"]};
-      
+
       AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
       Context context = new Context();
 
