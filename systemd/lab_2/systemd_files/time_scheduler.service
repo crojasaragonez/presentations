@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Time Script
+
+[Service]
+ExecStart=bash time.sh
+WorkingDirectory=/home/carlos/src/crojasaragonez/presentations/systemd/lab_2
+User=carlos
+Type=oneshot
+
+[Install]
+WantedBy=default.target

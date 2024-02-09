@@ -1,0 +1,15 @@
+[Unit]
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/home/carlos/.nvm/versions/node/v20.6.1/bin/node index.js
+WorkingDirectory=/home/carlos/src/crojasaragonez/presentations/systemd/lab_1/express_js
+EnvironmentFile=/home/carlos/src/crojasaragonez/presentations/systemd/lab_1/express_js/.env
+User=carlos
+Restart=always
+RestartSec=5
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=%n
