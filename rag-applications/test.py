@@ -6,8 +6,8 @@ from llama_index.embeddings.ollama import OllamaEmbedding
 from dotenv import load_dotenv
 load_dotenv()
 
-Settings.llm = Ollama(model = os.getenv('MODEL'), request_timeout=120.0)
-Settings.embed_model = OllamaEmbedding(model_name = os.getenv('MODEL'))
+# Settings.llm = Ollama(model = os.getenv('MODEL'), request_timeout=120.0)
+# Settings.embed_model = OllamaEmbedding(model_name = os.getenv('MODEL'))
 
 storage_context = StorageContext.from_defaults(persist_dir = f"./{os.getenv('MODEL')}")
 index = load_index_from_storage(storage_context)
