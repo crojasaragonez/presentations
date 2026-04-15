@@ -87,6 +87,32 @@ Solo presentar el marco; no mapear todavía rol por rol. Fotos: Unsplash (cocina
 -->
 
 ---
+layout: two-cols
+layoutClass: gap-10 items-center
+transition: slide-up
+level: 2
+---
+
+# LLM
+
+En el restaurante, un **LLM** equivale a tener a alguien que **se ha leído, en la práctica, los libros y textos sobre cocina que hay en internet** —como si hubiera absorbido una biblioteca entera de gastronomía en línea. Eso **no reemplaza** la cocina ni el servicio, pero **aporta un valor excepcional**: una base de conocimiento y de lenguaje difícil de igualar con un solo experto humano.
+
+::right::
+
+<figure class="m-0 pr-2">
+  <img
+    src="/llm/cookbooks-stack.jpg"
+    alt="Pila de libros de cocina en una estantería: metáfora del conocimiento textual que condensa un LLM"
+    class="rounded-lg object-cover w-full max-h-80 shadow-md"
+  />
+  <figcaption class="text-sm opacity-75 mt-2 text-left">Conocimiento de cocina acumulado como en una biblioteca —el tipo de material del que aprende un LLM</figcaption>
+</figure>
+
+<!--
+Primer concepto anclado a la analogía; matizar después limitaciones (no ha “cocinado” cada plato, alucinaciones, etc.) si toca. Imagen: Unsplash (Haberdoedas), libros de cocina.
+-->
+
+---
 transition: slide-up
 level: 2
 ---
