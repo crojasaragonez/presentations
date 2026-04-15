@@ -43,12 +43,24 @@ transition: fade-out
 
 # Conceptos
 
-Para entender qué es *realmente* un agente de IA hace falta tejer muchas piezas: modelos, diseño de interacción, arquitectura, operación y gobernanza. **Solo el vocabulario ya cansa** — más adelante lo bajamos a tierra con una analogía.
+Para entender qué es *realmente* un agente de IA hace falta tejer muchas piezas: modelos, diseño de interacción, arquitectura, operación y gobernanza. **Solo el vocabulario ya cansa** — en la siguiente diapositiva proponemos una analogía para ordenarlo.
 
 <AgentConceptCloud />
 
 <!--
 Enfoque: la nube debe verse abrumadora a propósito; el siguiente bloque simplificará con analogía.
+-->
+
+---
+transition: slide-up
+---
+
+# Analogía del restaurante
+
+Para ordenar todo ese vocabulario sin ahogarnos en definiciones, vamos a usar **un restaurante** como imagen común: en las siguientes diapositivas veremos cómo encajan ahí los conceptos — **un solo escenario** en lugar de una lista suelta de términos.
+
+<!--
+Solo presentar el marco; no mapear todavía rol por rol.
 -->
 
 ---
