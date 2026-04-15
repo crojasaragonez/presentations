@@ -113,6 +113,32 @@ Primer concepto anclado a la analogía; matizar después limitaciones (no ha “
 -->
 
 ---
+layout: two-cols
+layoutClass: gap-10 items-center
+transition: slide-up
+level: 2
+---
+
+# Prompt
+
+El **prompt** es, en el restaurante, **la orden del cliente**: lo que se pide con palabras en ese momento —clara o ambigua, corta o larga— y que orienta qué debe salir de la cocina (o qué debe responder el equipo). Sin pedido no hay plato concreto; con un pedido mal formulado, el resultado suele decepcionar aunque la cocina sea excelente.
+
+::right::
+
+<figure class="m-0 pr-2">
+  <img
+    src="/prompt/customer-order.jpg"
+    alt="Mesero tomando el pedido a una clienta en un bar: la petición explícita que guía el servicio"
+    class="rounded-lg object-cover w-full max-h-80 shadow-md"
+  />
+  <figcaption class="text-sm opacity-75 mt-2 text-left">El pedido en palabras —equivalente al prompt que recibe el modelo</figcaption>
+</figure>
+
+<!--
+Analogía: prompt = instrucción / pedido. Imagen: Unsplash (pedido en restaurante).
+-->
+
+---
 transition: slide-up
 level: 2
 ---
