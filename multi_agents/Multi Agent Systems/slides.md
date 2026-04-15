@@ -5,7 +5,7 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: IA Agéntica
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -24,21 +24,13 @@ comark: true
 duration: 35min
 ---
 
-# Welcome to Slidev
+# Agentic AI
 
-Presentation slides for developers
+La IA deja de conversar y empieza a trabajar.
 
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
-</div>
-
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
+<div class="absolute bottom-0 left-0 right-0 pb-8 px-6 text-center text-sm opacity-90">
+  <div>Carlos Luis Rojas Aragonés</div>
+  <div class="mt-1">CTO · Golabs · 2026</div>
 </div>
 
 <!--
