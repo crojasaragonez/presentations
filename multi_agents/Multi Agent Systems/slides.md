@@ -172,6 +172,44 @@ Analogía: agente = quien interpreta el prompt, planifica y orquesta. Imagen: Un
 -->
 
 ---
+layout: two-cols
+layoutClass: gap-10 items-center
+transition: slide-up
+level: 2
+---
+
+# Multi-Agents
+
+Los **multi-agentes** son como un **equipo multidisciplinario en cocina**: no hay un solo perfil que lo haga todo. Hay quien domina **salados**, quien lleva **postres y repostería**, quien aporta **otra tradición o estación** —como en un formato tipo ***MasterChef***, con especialidades y pruebas distintas en paralelo— y **todos coordinan** para cumplir **un mismo objetivo** (el servicio, el menú, la experiencia del comensal).
+
+Cada “agente” aporta su criterio y sus herramientas; el valor está en **cómo se reparten tareas, se comunican y se alinean** sin trabar la cocina.
+
+::right::
+
+<div class="flex flex-col gap-4 justify-center pr-2">
+  <figure class="m-0">
+    <img
+      src="/multi-agents/chefs-brigade.jpg"
+      alt="Varios chefs trabajando juntos en cocina profesional: brigada y distintas líneas de trabajo"
+      class="rounded-lg object-cover w-full max-h-44 shadow-md"
+    />
+    <figcaption class="text-sm opacity-75 mt-2 text-left">Brigada y cocinas / estaciones —varios especialistas en paralelo</figcaption>
+  </figure>
+  <figure class="m-0">
+    <img
+      src="/multi-agents/pastry-doughnuts-team.jpg"
+      alt="Equipo en cocina preparando masas y donas: línea de repostería y postres"
+      class="rounded-lg object-cover w-full max-h-44 shadow-md"
+    />
+    <figcaption class="text-sm opacity-75 mt-2 text-left">Otro frente (p. ej. postres) con su propio equipo y ritmo</figcaption>
+  </figure>
+</div>
+
+<!--
+Imágenes libres Unsplash: grupo de chefs en cocina (Al Elmes); equipo preparando donas (Daniel). Metáfora tipo MasterChef: especialidades distintas, mismo comedor.
+-->
+
+---
 transition: slide-up
 level: 2
 ---
