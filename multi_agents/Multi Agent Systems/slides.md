@@ -66,11 +66,11 @@ Para ordenar todo ese vocabulario sin ahogarnos en definiciones, vamos a usar **
 <div class="flex flex-col gap-4 justify-center pr-2">
   <figure class="m-0">
     <img
-      src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=960&q=80"
-      alt="Equipo de cocina trabajando en línea en un restaurante"
+      src="https://images.unsplash.com/photo-1761095596618-081ea3f043a5?auto=format&fit=crop&w=960&q=80"
+      alt="Varios chefs colaborando en una cocina de restaurante ocupada"
       class="rounded-lg object-cover w-full max-h-50 shadow-md"
     />
-    <figcaption class="text-sm opacity-75 mt-2 text-left">Cocina y personal de cocina</figcaption>
+    <figcaption class="text-sm opacity-75 mt-2 text-left">Cocina: equipo de chefs colaborando</figcaption>
   </figure>
   <figure class="m-0">
     <img
