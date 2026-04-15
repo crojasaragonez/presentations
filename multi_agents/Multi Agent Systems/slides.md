@@ -74,11 +74,11 @@ Para ordenar todo ese vocabulario sin ahogarnos en definiciones, vamos a usar **
   </figure>
   <figure class="m-0">
     <img
-      src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=960&q=80"
-      alt="Sala de restaurante con mesas, comensales y personal de servicio"
+      src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=80"
+      alt="Plato gourmet en cerámica blanca con comida y copa de vino en mesa"
       class="rounded-lg object-cover w-full max-h-50 shadow-md"
     />
-    <figcaption class="text-sm opacity-75 mt-2 text-left">Mesas y quienes atienden al comedor</figcaption>
+    <figcaption class="text-sm opacity-75 mt-2 text-left">Sala: platillos y bebidas en la mesa</figcaption>
   </figure>
 </div>
 
