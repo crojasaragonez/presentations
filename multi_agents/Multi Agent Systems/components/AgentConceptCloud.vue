@@ -1,59 +1,78 @@
 <script setup lang="ts">
-/** Weighted labels for an informal word cloud (no layout algorithm — stable export). */
+/** Términos que deben resaltarse frente al resto (estilo discreto). */
+const PROMINENT = new Set([
+  'LLM',
+  'Agent',
+  'Tokens',
+  'Multi-Agents',
+  'Prompt',
+  'Context',
+  'Agentic frameworks',
+  'Hallucination',
+])
+
 const tags = [
-  { text: 'LLMs', class: 'text-3xl font-bold -rotate-1' },
-  { text: 'Prompt', class: 'text-2xl rotate-2' },
-  { text: 'SLMs', class: 'text-xl -rotate-2 opacity-90' },
-  { text: 'Observability', class: 'text-lg opacity-90' },
-  { text: 'MCP', class: 'text-3xl font-bold rotate-2' },
-  { text: 'Explainability', class: 'text-lg opacity-90 -rotate-1' },
-  { text: 'Human-in-the-loop', class: 'text-base opacity-90 rotate-1' },
-  { text: 'Agent', class: 'text-3xl font-bold rotate-1' },
-  { text: 'Autonomous', class: 'text-lg' },
-  { text: 'Semi-autonomous', class: 'text-base font-bold opacity-90' },
-  { text: 'Short-term memory', class: 'text-sm opacity-85' },
-  { text: 'Long-term memory', class: 'text-sm opacity-85 -rotate-1' },
-  { text: 'Asynchronous', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Synchronous', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Guardrails', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Tokens', class: 'text-2xl' },
-  { text: 'Sandboxing', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'System prompt', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Zero-shot prompting', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Finetuning', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Few-shot prompting', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Chain of thought', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Multi-Agents', class: 'text-2xl -rotate-1' },
-  { text: 'Structured prompting', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Prompt injection', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Inference', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Caching', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Embeddings', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Voice agents', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Agentic frameworks', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Vector databases', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Vector DBs', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Hallucination', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'RAG', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Temperature', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Infinite loops', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Context window', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'Data pipelines', class: 'text-lg opacity-90 rotate-1' },
-  { text: 'State machines', class: 'text-lg opacity-90 rotate-1' },
+  'LLM',
+  'SLMs',
+  'Observability',
+  'MCP',
+  'Explainability',
+  'Human-in-the-loop',
+  'Autonomous',
+  'Agent',
+  'Semi-autonomous',
+  'Prompt',
+  'Short-term memory',
+  'Long-term memory',
+  'Asynchronous',
+  'Synchronous',
+  'Guardrails',
+  'Sandboxing',
+  'System prompt',
+  'Tokens',
+  'Zero-shot prompting',
+  'Finetuning',
+  'Context',
+  'Multi-Agents',
+  'Few-shot prompting',
+  'Chain of thought',
+  'Structured prompting',
+  'Prompt injection',
+  'Inference',
+  'Caching',
+  'Embeddings',
+  'Voice agents',
+  'Agentic frameworks',
+  'Vectors',
+  'Vector DBs',
+  'Hallucination',
+  'RAG',
+  'Temperature',
+  'Infinite loops',
+  'Data pipelines',
+  'State machines',
+  'Agent role',
 ] as const
+
+function classesFor(text: string) {
+  if (PROMINENT.has(text)) {
+    return 'text-3xl font-bold opacity-90 text-white drop-shadow-sm'
+  }
+  return 'text-lg font-normal opacity-60 text-white/80'
+}
 </script>
 
 <template>
   <div
-    class="mx-auto mt-4 max-w-5xl flex flex-wrap justify-center gap-x-4 gap-y-3 content-center px-2 text-center leading-tight"
+    class="mx-auto mt-4 max-w-5xl flex flex-wrap justify-center gap-x-3 gap-y-2 sm:gap-x-4 sm:gap-y-3 content-center px-2 text-center leading-tight"
     aria-label="Conceptos relacionados con agentes de IA"
   >
     <span
-      v-for="tag in tags"
-      :key="tag.text"
-      :class="['inline-block tracking-tight', tag.class]"
+      v-for="text in tags"
+      :key="text"
+      :class="['inline-block tracking-tight', classesFor(text)]"
     >
-      {{ tag.text }}
+      {{ text }}
     </span>
   </div>
 </template>
