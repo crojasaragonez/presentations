@@ -186,27 +186,17 @@ Cada “agente” aporta su criterio y sus herramientas; el valor está en **có
 
 ::right::
 
-<div class="flex flex-col gap-4 justify-center pr-2">
-  <figure class="m-0">
-    <img
-      src="/multi-agents/chefs-brigade.jpg"
-      alt="Varios chefs trabajando juntos en cocina profesional: brigada y distintas líneas de trabajo"
-      class="rounded-lg object-cover w-full max-h-44 shadow-md"
-    />
-    <figcaption class="text-sm opacity-75 mt-2 text-left">Brigada y cocinas / estaciones —varios especialistas en paralelo</figcaption>
-  </figure>
-  <figure class="m-0">
-    <img
-      src="/multi-agents/pastry-doughnuts-team.jpg"
-      alt="Equipo en cocina preparando masas y donas: línea de repostería y postres"
-      class="rounded-lg object-cover w-full max-h-44 shadow-md"
-    />
-    <figcaption class="text-sm opacity-75 mt-2 text-left">Otro frente (p. ej. postres) con su propio equipo y ritmo</figcaption>
-  </figure>
-</div>
+<figure class="m-0 pr-2">
+  <img
+    src="/multi-agents/chef-group-table.jpg"
+    alt="Grupo de chefs de pie junto a una mesa de trabajo: equipo multidisciplinario reunido"
+    class="rounded-lg object-cover w-full max-h-80 shadow-md"
+  />
+  <figcaption class="text-sm opacity-75 mt-2 text-left">Varios perfiles, un mismo equipo —como agentes distintos con un objetivo común</figcaption>
+</figure>
 
 <!--
-Imágenes libres Unsplash: grupo de chefs en cocina (Al Elmes); equipo preparando donas (Daniel). Metáfora tipo MasterChef: especialidades distintas, mismo comedor.
+Imagen: Unsplash (CET / ceteduvn) — https://unsplash.com/photos/group-of-chef-standing-beside-table-47Q3QfM5Eh4
 -->
 
 ---
