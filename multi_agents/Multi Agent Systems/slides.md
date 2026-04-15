@@ -54,7 +54,7 @@ Enfoque: la nube debe verse abrumadora a propósito; el siguiente bloque simplif
 ---
 layout: two-cols
 layoutClass: gap-10 items-center
-transition: slide-up
+transition: fade-out
 ---
 
 # Analogía del restaurante
@@ -89,7 +89,7 @@ Solo presentar el marco; no mapear todavía rol por rol. Fotos: Unsplash (cocina
 ---
 layout: two-cols
 layoutClass: gap-10 items-center
-transition: slide-up
+transition: fade-out
 level: 2
 ---
 
@@ -115,7 +115,7 @@ Primer concepto anclado a la analogía; matizar después limitaciones (no ha “
 ---
 layout: two-cols
 layoutClass: gap-10 items-center
-transition: slide-up
+transition: fade-out
 level: 2
 ---
 
@@ -141,7 +141,7 @@ Analogía: prompt = instrucción / pedido. Imagen: Unsplash (pedido en restauran
 ---
 layout: two-cols
 layoutClass: gap-10 items-center
-transition: slide-up
+transition: fade-out
 level: 2
 ---
 
@@ -174,7 +174,7 @@ Analogía: agente = quien interpreta el prompt, planifica y orquesta. Imagen: Un
 ---
 layout: two-cols
 layoutClass: gap-10 items-center
-transition: slide-up
+transition: fade-out
 level: 2
 ---
 

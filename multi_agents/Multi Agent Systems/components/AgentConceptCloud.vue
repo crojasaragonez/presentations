@@ -56,9 +56,10 @@ const tags = [
 
 function classesFor(text: string) {
   if (PROMINENT.has(text)) {
-    return 'text-3xl font-bold opacity-90 text-white drop-shadow-sm'
+    // Legible en fondo claro; `dark:` alinea con slides oscuros (p. ej. seriph por defecto)
+    return 'text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white drop-shadow-sm dark:drop-shadow-sm'
   }
-  return 'text-lg font-normal opacity-60 text-white/80'
+  return 'text-[11px] sm:text-sm font-normal text-slate-500 dark:text-white/75'
 }
 </script>
 
