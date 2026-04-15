@@ -52,6 +52,8 @@ Enfoque: la nube debe verse abrumadora a propósito; el siguiente bloque simplif
 -->
 
 ---
+layout: two-cols
+layoutClass: gap-10 items-center
 transition: slide-up
 ---
 
@@ -59,8 +61,29 @@ transition: slide-up
 
 Para ordenar todo ese vocabulario sin ahogarnos en definiciones, vamos a usar **un restaurante** como imagen común: en las siguientes diapositivas veremos cómo encajan ahí los conceptos — **un solo escenario** en lugar de una lista suelta de términos.
 
+::right::
+
+<div class="flex flex-col gap-4 justify-center pr-2">
+  <figure class="m-0">
+    <img
+      src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=960&q=80"
+      alt="Equipo de cocina trabajando en línea en un restaurante"
+      class="rounded-lg object-cover w-full max-h-50 shadow-md"
+    />
+    <figcaption class="text-sm opacity-75 mt-2 text-left">Cocina y personal de cocina</figcaption>
+  </figure>
+  <figure class="m-0">
+    <img
+      src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=960&q=80"
+      alt="Sala de restaurante con mesas, comensales y personal de servicio"
+      class="rounded-lg object-cover w-full max-h-50 shadow-md"
+    />
+    <figcaption class="text-sm opacity-75 mt-2 text-left">Mesas y quienes atienden al comedor</figcaption>
+  </figure>
+</div>
+
 <!--
-Solo presentar el marco; no mapear todavía rol por rol.
+Solo presentar el marco; no mapear todavía rol por rol. Fotos: Unsplash (cocina / sala).
 -->
 
 ---
