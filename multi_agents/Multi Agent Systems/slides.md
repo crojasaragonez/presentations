@@ -66,7 +66,7 @@ Para ordenar todo ese vocabulario sin ahogarnos en definiciones, vamos a usar **
 <div class="flex flex-col gap-4 justify-center pr-2">
   <figure class="m-0">
     <img
-      src="https://images.unsplash.com/photo-1761095596618-081ea3f043a5?auto=format&fit=crop&w=960&q=80"
+      src="/restaurant-analogy/chefs-collaborating.jpg"
       alt="Varios chefs colaborando en una cocina de restaurante ocupada"
       class="rounded-lg object-cover w-full max-h-50 shadow-md"
     />
@@ -74,7 +74,7 @@ Para ordenar todo ese vocabulario sin ahogarnos en definiciones, vamos a usar **
   </figure>
   <figure class="m-0">
     <img
-      src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=80"
+      src="/restaurant-analogy/dish-plate-wine.jpg"
       alt="Plato gourmet en cerámica blanca con comida y copa de vino en mesa"
       class="rounded-lg object-cover w-full max-h-50 shadow-md"
     />
