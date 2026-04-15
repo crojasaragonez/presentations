@@ -139,6 +139,39 @@ Analogía: prompt = instrucción / pedido. Imagen: Unsplash (pedido en restauran
 -->
 
 ---
+layout: two-cols
+layoutClass: gap-10 items-center
+transition: slide-up
+level: 2
+---
+
+# Agent
+
+El **agente** es el rol que, frente al pedido y con el conocimiento a mano, **no se limita a ejecutar un solo gesto**: **interpreta la orden**, **decide qué “receta” (estrategia) aplica**, **organiza los pasos** y **coordina recursos** —ingredientes, tiempo, turnos— hasta encaminar el resultado.
+
+- **Interpreta** la orden (qué pidió realmente el cliente).
+- **Decide** qué receta o enfoque conviene.
+- **Organiza** la secuencia de pasos.
+- **Coordina** ingredientes, tiempo y carga de trabajo.
+
+**No solo “cocina”**: **piensa y actúa** para cumplir un **objetivo** bajo restricciones reales.
+
+::right::
+
+<figure class="m-0 pr-2">
+  <img
+    src="/agent/latin-man-cooking-kitchen.jpg"
+    alt="Persona en cocina preparando ensalada o salsa con ingredientes: interpretar, decidir y actuar con lo disponible"
+    class="rounded-lg object-cover w-full max-h-80 shadow-md"
+  />
+  <figcaption class="text-sm opacity-75 mt-2 text-left">Preparación activa: receta mental, pasos e ingredientes al mismo tiempo —como un agente ante un objetivo</figcaption>
+</figure>
+
+<!--
+Analogía: agente = quien interpreta el prompt, planifica y orquesta. Imagen: Unsplash (Getty) — misma foto que https://unsplash.com/photos/CPvzjNGg0Dk; revisa términos Unsplash+ si aplica a tu uso.
+-->
+
+---
 transition: slide-up
 level: 2
 ---
