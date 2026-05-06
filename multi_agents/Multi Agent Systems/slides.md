@@ -46,11 +46,16 @@ class: text-center
 
 ---
 transition: fade-out
+class: relative
 ---
 
 # Niveles de madurez en IA
 
 <AiMaturityMountains />
+
+<div class="absolute bottom-6 right-8 max-w-md text-right text-[11px] leading-snug opacity-75 sm:text-xs text-slate-600 dark:text-slate-400">
+  Fuente: adaptación de una master class del Dr. George Westerman (MIT).
+</div>
 
 ---
 transition: fade-out
