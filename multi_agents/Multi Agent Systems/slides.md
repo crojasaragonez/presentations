@@ -38,6 +38,21 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+layout: center
+class: text-center
+---
+
+# ¿Está su organización preparada para la IA?
+
+---
+transition: fade-out
+---
+
+# Niveles de madurez en IA
+
+<AiMaturityMountains />
+
+---
 transition: fade-out
 ---
 
