@@ -220,6 +220,37 @@ Imagen: Unsplash (CET / ceteduvn). https://unsplash.com/photos/group-of-chef-sta
 -->
 
 ---
+layout: center
+class: text-center
+transition: fade-out
+level: 2
+---
+
+# ¿Cómo empiezo?
+
+---
+transition: fade-out
+level: 2
+---
+
+# Ideas para empezar a incluir la IA
+
+<v-clicks>
+
+- **Normar el uso cotidiano**: plantillas de prompt, política de uso de modelos externos, canal interno para dudas y incidentes.
+- **Defina un budget para herramientas de AI internas**: y deje a su equipo escoger las herramientas.
+- **Plan piloto con voluntarios**: comente qué funcionó, qué no, y por qué.
+- **Elegir un caso acotado** con impacto visible y bajo riesgo (una tarea repetitiva, un documento tipo, un flujo interno), en lugar de un “programa IA” abstracto.
+- **Definir reglas antes de herramientas**: qué datos no salen del perímetro, revisión humana obligatoria, y quién es responsable si algo falla.
+- **Medir algo concreto**: tiempo ahorrado, errores detectados, satisfacción del usuario interno… sin métricas, es difícil justificar siguientes pasos.
+
+</v-clicks>
+
+<!--
+Puente desde multi-agentes hacia práctica organizacional; ajustar ejemplos a la audiencia (Golabs / sector).
+-->
+
+---
 transition: slide-up
 level: 2
 ---
