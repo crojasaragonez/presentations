@@ -63,7 +63,7 @@ transition: fade-out
 
 # Conceptos
 
-Para entender qué es *realmente* un agente de IA hace falta tejer muchas piezas: modelos, diseño de interacción, arquitectura, operación y gobernanza. **Solo el vocabulario ya cansa** — en la siguiente diapositiva proponemos una analogía para ordenarlo.
+Para entender qué es *realmente* un agente de IA hace falta tejer muchas piezas: modelos, diseño de interacción, arquitectura, operación y gobernanza. **Solo el vocabulario ya cansa.** En la siguiente diapositiva proponemos una analogía para ordenarlo.
 
 <AgentConceptCloud />
 
@@ -79,7 +79,7 @@ transition: fade-out
 
 # Analogía del restaurante
 
-Para ordenar todo ese vocabulario sin ahogarnos en definiciones, vamos a usar **un restaurante** como imagen común: en las siguientes diapositivas veremos cómo encajan ahí los conceptos — **un solo escenario** en lugar de una lista suelta de términos.
+Para ordenar todo ese vocabulario sin ahogarnos en definiciones, vamos a usar **un restaurante** como imagen común: en las siguientes diapositivas veremos cómo encajan ahí los conceptos: **un solo escenario** en lugar de una lista suelta de términos.
 
 ::right::
 
@@ -115,7 +115,7 @@ level: 2
 
 # LLM
 
-En el restaurante, un **LLM** equivale a tener a alguien que **se ha leído, en la práctica, los libros y textos sobre cocina que hay en internet** —como si hubiera absorbido una biblioteca entera de gastronomía en línea. Eso **no reemplaza** la cocina ni el servicio, pero **aporta un valor excepcional**: una base de conocimiento y de lenguaje difícil de igualar con un solo experto humano.
+En el restaurante, un **LLM** equivale a tener a alguien que **se ha leído, en la práctica, los libros y textos sobre cocina que hay en internet**, como si hubiera absorbido una biblioteca entera de gastronomía en línea. Eso **no reemplaza** la cocina ni el servicio, pero **aporta un valor excepcional**: una base de conocimiento y de lenguaje difícil de igualar con un solo experto humano.
 
 ::right::
 
@@ -125,7 +125,7 @@ En el restaurante, un **LLM** equivale a tener a alguien que **se ha leído, en 
     alt="Pila de libros de cocina en una estantería: metáfora del conocimiento textual que condensa un LLM"
     class="rounded-lg object-cover w-full max-h-80 shadow-md"
   />
-  <figcaption class="text-sm opacity-75 mt-2 text-left">Conocimiento de cocina acumulado como en una biblioteca —el tipo de material del que aprende un LLM</figcaption>
+  <figcaption class="text-sm opacity-75 mt-2 text-left">Conocimiento de cocina acumulado como en una biblioteca: el tipo de material del que aprende un LLM</figcaption>
 </figure>
 
 <!--
@@ -141,7 +141,7 @@ level: 2
 
 # Prompt
 
-El **prompt** es, en el restaurante, **la orden del cliente**: lo que se pide con palabras en ese momento —clara o ambigua, corta o larga— y que orienta qué debe salir de la cocina (o qué debe responder el equipo). Sin pedido no hay plato concreto; con un pedido mal formulado, el resultado suele decepcionar aunque la cocina sea excelente.
+El **prompt** es, en el restaurante, **la orden del cliente**: lo que se pide con palabras en ese momento (clara o ambigua, corta o larga) y que orienta qué debe salir de la cocina (o qué debe responder el equipo). Sin pedido no hay plato concreto; con un pedido mal formulado, el resultado suele decepcionar aunque la cocina sea excelente.
 
 ::right::
 
@@ -151,7 +151,7 @@ El **prompt** es, en el restaurante, **la orden del cliente**: lo que se pide co
     alt="Mesero tomando el pedido a una clienta en un bar: la petición explícita que guía el servicio"
     class="rounded-lg object-cover w-full max-h-80 shadow-md"
   />
-  <figcaption class="text-sm opacity-75 mt-2 text-left">El pedido en palabras —equivalente al prompt que recibe el modelo</figcaption>
+  <figcaption class="text-sm opacity-75 mt-2 text-left">El pedido en palabras, equivalente al prompt que recibe el modelo</figcaption>
 </figure>
 
 <!--
@@ -167,7 +167,7 @@ level: 2
 
 # Agent
 
-El **agente** es el rol que, frente al pedido y con el conocimiento a mano, **no se limita a ejecutar un solo gesto**: **interpreta la orden**, **decide qué “receta” (estrategia) aplica**, **organiza los pasos** y **coordina recursos** —ingredientes, tiempo, turnos— hasta encaminar el resultado.
+El **agente** es el rol que, frente al pedido y con el conocimiento a mano, **no se limita a ejecutar un solo gesto**: **interpreta la orden**, **decide qué “receta” (estrategia) aplica**, **organiza los pasos** y **coordina recursos** (ingredientes, tiempo, turnos) hasta encaminar el resultado.
 
 - **Interpreta** la orden (qué pidió realmente el cliente).
 - **Decide** qué receta o enfoque conviene.
@@ -184,11 +184,11 @@ El **agente** es el rol que, frente al pedido y con el conocimiento a mano, **no
     alt="Persona en cocina preparando ensalada o salsa con ingredientes: interpretar, decidir y actuar con lo disponible"
     class="rounded-lg object-cover w-full max-h-80 shadow-md"
   />
-  <figcaption class="text-sm opacity-75 mt-2 text-left">Preparación activa: receta mental, pasos e ingredientes al mismo tiempo —como un agente ante un objetivo</figcaption>
+  <figcaption class="text-sm opacity-75 mt-2 text-left">Preparación activa: receta mental, pasos e ingredientes al mismo tiempo, como un agente ante un objetivo</figcaption>
 </figure>
 
 <!--
-Analogía: agente = quien interpreta el prompt, planifica y orquesta. Imagen: Unsplash (Getty) — misma foto que https://unsplash.com/photos/CPvzjNGg0Dk; revisa términos Unsplash+ si aplica a tu uso.
+Analogía: agente = quien interpreta el prompt, planifica y orquesta. Imagen: Unsplash (Getty). Misma foto que https://unsplash.com/photos/CPvzjNGg0Dk; revisa términos Unsplash+ si aplica a tu uso.
 -->
 
 ---
@@ -200,7 +200,7 @@ level: 2
 
 # Multi-Agents
 
-Los **multi-agentes** son como un **equipo multidisciplinario en cocina**: no hay un solo perfil que lo haga todo. Hay quien domina **salados**, quien lleva **postres y repostería**, quien aporta **otra tradición o estación** —como en un formato tipo ***MasterChef***, con especialidades y pruebas distintas en paralelo— y **todos coordinan** para cumplir **un mismo objetivo** (el servicio, el menú, la experiencia del comensal).
+Los **multi-agentes** son como un **equipo multidisciplinario en cocina**: no hay un solo perfil que lo haga todo. Hay quien domina **salados**, quien lleva **postres y repostería**, quien aporta **otra tradición o estación** (como en un formato tipo ***MasterChef***, con especialidades y pruebas distintas en paralelo) y **todos coordinan** para cumplir **un mismo objetivo** (el servicio, el menú, la experiencia del comensal).
 
 Cada “agente” aporta su criterio y sus herramientas; el valor está en **cómo se reparten tareas, se comunican y se alinean** sin trabar la cocina.
 
@@ -212,11 +212,11 @@ Cada “agente” aporta su criterio y sus herramientas; el valor está en **có
     alt="Grupo de chefs de pie junto a una mesa de trabajo: equipo multidisciplinario reunido"
     class="rounded-lg object-cover w-full max-h-80 shadow-md"
   />
-  <figcaption class="text-sm opacity-75 mt-2 text-left">Varios perfiles, un mismo equipo —como agentes distintos con un objetivo común</figcaption>
+  <figcaption class="text-sm opacity-75 mt-2 text-left">Varios perfiles, un mismo equipo, como agentes distintos con un objetivo común</figcaption>
 </figure>
 
 <!--
-Imagen: Unsplash (CET / ceteduvn) — https://unsplash.com/photos/group-of-chef-standing-beside-table-47Q3QfM5Eh4
+Imagen: Unsplash (CET / ceteduvn). https://unsplash.com/photos/group-of-chef-standing-beside-table-47Q3QfM5Eh4
 -->
 
 ---
