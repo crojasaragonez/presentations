@@ -11,21 +11,24 @@ const levels = [
   {
     level: 1,
     label: 'Nivel 1',
-    description: 'Productividad Individual.',
+    description:
+      'Productividad individual: IA generativa en tareas habituales para personas en muchos roles.',
     peakY: 132,
     fillClass: 'fill-slate-500 dark:fill-slate-500',
   },
   {
     level: 2,
     label: 'Nivel 2',
-    description: 'Roles especializados y automatización de tareas.',
+    description:
+      'Roles y tareas especializados: aplicaciones dirigidas de IA generativa a trabajos concretos.',
     peakY: 82,
     fillClass: 'fill-slate-600 dark:fill-slate-400',
   },
   {
     level: 3,
     label: 'Nivel 3',
-    description: 'IA integrada a productos y procesos en toda la organización.',
+    description:
+      'Productos y procesos: mayor autonomía en funcionalidades del producto, la interacción con clientes y los procesos operativos.',
     peakY: 28,
     fillClass: 'fill-slate-800 dark:fill-slate-200',
   },
@@ -69,21 +72,13 @@ const levels = [
         <div class="mt-3 w-full text-center">
           <div
             class="text-sm font-semibold tracking-tight sm:text-base"
-            :class="
-              item.level === 0
-                ? 'text-slate-500 dark:text-slate-400'
-                : 'text-slate-800 dark:text-slate-100'
-            "
+            :class="'text-slate-800 dark:text-slate-100'"
           >
             {{ item.label }}
           </div>
           <p
             class="mt-1.5 text-[10px] leading-snug sm:text-xs md:text-sm"
-            :class="
-              item.level === 0
-                ? 'text-slate-500 dark:text-slate-500'
-                : 'text-slate-600 dark:text-slate-300'
-            "
+            :class="'text-slate-600 dark:text-slate-300'"
           >
             {{ item.description }}
           </p>
