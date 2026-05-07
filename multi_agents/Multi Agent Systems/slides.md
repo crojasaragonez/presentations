@@ -28,6 +28,12 @@ duration: 35min
 
 La IA deja de conversar y empieza a trabajar.
 
+<img
+  src="/golabs/logotipo.png"
+  alt="Golabs"
+  class="absolute top-8 right-8 w-34 opacity-90"
+/>
+
 <div class="absolute bottom-0 left-0 right-0 pb-8 px-6 text-center text-sm opacity-90">
   <div>Carlos Luis Rojas Aragonés</div>
   <div class="mt-1">CTO · Golabs · 2026</div>
@@ -283,6 +289,12 @@ level: 2
 ---
 
 # ¿Necesita ayuda para empezar?
+
+<img
+  src="/golabs/logotipo.png"
+  alt="Golabs"
+  class="absolute top-8 right-8 w-34 opacity-90"
+/>
 
 <div class="mx-auto mt-8 max-w-3xl text-2xl leading-relaxed">
 Puedo acompañarle a identificar casos de uso, diseñar pilotos seguros y convertir la IA en capacidades reales para su equipo.
