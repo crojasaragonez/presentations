@@ -250,7 +250,7 @@ class: '!text-left'
 
 <div class="text-emerald-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 02 · CURATE</div>
 
-# Curate as a team — and everyone wins
+# use the "wisdom of the crowd" and everyone wins
 
 The fastest way to level up isn’t a smarter AI. It’s **a teammate handing you the prompt that already worked.** Make your discoveries everyone’s discoveries.
 
@@ -258,9 +258,9 @@ The fastest way to level up isn’t a smarter AI. It’s **a teammate handing yo
   <div class="col-span-5">
     <ul class="space-y-3 text-base list-none p-0">
       <li v-click class="flex gap-3 items-start"><carbon:share class="text-emerald-300 mt-1 shrink-0" /><span>Post every prompt that shipped great work</span></li>
-      <li v-click class="flex gap-3 items-start"><carbon:idea class="text-emerald-300 mt-1 shrink-0" /><span>Borrow generously — your team <em>is</em> your prompt library</span></li>
-      <li v-click class="flex gap-3 items-start"><carbon:chat class="text-emerald-300 mt-1 shrink-0" /><span>Open an <code class="bg-emerald-300/10 px-1 rounded">#ai-tricks</code> channel — one post, one prompt</span></li>
-      <li v-click class="flex gap-3 items-start"><carbon:events class="text-emerald-300 mt-1 shrink-0" /><span>Demo Fridays — 15 min to swap what’s working</span></li>
+      <li v-click class="flex gap-3 items-start"><carbon:idea class="text-emerald-300 mt-1 shrink-0" /><span>Borrow generously, your team <em>is</em> your prompt library</span></li>
+      <li v-click class="flex gap-3 items-start"><carbon:chat class="text-emerald-300 mt-1 shrink-0" /><span>Open an <code class="bg-emerald-300/10 px-1 rounded">#ai-tricks</code> channel, one post, one prompt</span></li>
+      <li v-click class="flex gap-3 items-start"><carbon:events class="text-emerald-300 mt-1 shrink-0" /><span>Demo Fridays, 15 min to swap what’s working</span></li>
     </ul>
   </div>
   <div class="col-span-7">
@@ -282,7 +282,7 @@ class: '!text-left'
 
 # Give it everything it needs to know about you
 
-Stop copy-pasting the same background every time. Give AI your context **once** — and it stops feeling like a stranger.
+Stop copy-pasting the same background every time. Give AI your context **once**, and it stops feeling like a stranger.
 
 <div class="flex items-stretch justify-between gap-3 mt-6">
   <div v-click class="flex-1 rounded-2xl bg-gradient-to-br from-violet-500/20 to-violet-500/5 p-5 ring-1 ring-violet-300/25 text-center">
@@ -315,7 +315,7 @@ Stop copy-pasting the same background every time. Give AI your context **once** 
   </div>
   <div v-click class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur-md">
     <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">your apps</div>
-    <div class="text-sm mt-1">Connect calendar, email, Drive, Notion — already built into the AI you use.</div>
+    <div class="text-sm mt-1">Connect calendar, email, Drive, Notion, already built into the AI you use.</div>
   </div>
 </div>
 
@@ -349,7 +349,7 @@ The win isn’t “use AI sometimes.” It’s **AI is already working for you**
   <div v-click class="rounded-2xl p-4 bg-gradient-to-br from-violet-500/15 to-fuchsia-500/10 ring-1 ring-white/10">
     <carbon:notebook class="text-2xl text-violet-300" />
     <div class="mt-3 font-semibold">Meeting recap</div>
-    <div class="text-xs opacity-75 mt-1">The call, turned into decisions, owners, and dates — in your inbox.</div>
+    <div class="text-xs opacity-75 mt-1">The call, turned into decisions, owners, and dates, in your inbox.</div>
   </div>
   <div v-click class="rounded-2xl p-4 bg-gradient-to-br from-amber-500/15 to-orange-500/10 ring-1 ring-white/10">
     <carbon:chart-line class="text-2xl text-amber-300" />
@@ -385,7 +385,7 @@ class: '!text-left'
     <div class="text-3xl font-bold bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">
       ⏱ &nbsp;Time saved
     </div>
-    <div class="text-sm opacity-75 mt-1">Per task, per week. If it isn’t faster, change the instruction — or drop it.</div>
+    <div class="text-sm opacity-75 mt-1">Per task, per week. If it isn’t faster, change the instruction, or drop it.</div>
   </div>
   <div v-click>
     <div class="text-3xl font-bold bg-gradient-to-r from-emerald-300 to-teal-300 bg-clip-text text-transparent">
@@ -522,5 +522,5 @@ h1 .brand {
 </style>
 
 <!--
-Closing thought: the playbook is small on purpose. Capture, Curate, Connect, Automate, Measure — repeat. The compounding does the rest.
+Closing thought: the playbook is small on purpose. Capture, Curate, Connect, Automate, Measure, repeat. The compounding does the rest.
 -->
