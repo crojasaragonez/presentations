@@ -250,48 +250,26 @@ class: '!text-left'
 
 <div class="text-emerald-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 02 · CURATE</div>
 
-# Save your favorite instructions
+# Curate as a team — and everyone wins
 
-When you find an instruction that gives a great answer, **don’t throw it away — save it.** Tomorrow you’ll be glad you did.
+The fastest way to level up isn’t a smarter AI. It’s **a teammate handing you the prompt that already worked.** Make your discoveries everyone’s discoveries.
 
 <div class="grid grid-cols-12 gap-6 mt-4 items-start">
   <div class="col-span-5">
     <ul class="space-y-3 text-base list-none p-0">
-      <li v-click class="flex gap-3 items-start"><carbon:bookmark class="text-emerald-300 mt-1 shrink-0" /><span>Save the instructions that worked</span></li>
-      <li v-click class="flex gap-3 items-start"><carbon:user-avatar class="text-emerald-300 mt-1 shrink-0" /><span>Tell AI <em>who to be</em>: your tone, your style</span></li>
-      <li v-click class="flex gap-3 items-start"><carbon:compare class="text-emerald-300 mt-1 shrink-0" /><span>Try two versions — keep the one you like best</span></li>
-      <li v-click class="flex gap-3 items-start"><carbon:group class="text-emerald-300 mt-1 shrink-0" /><span>Share with your team — everyone wins</span></li>
+      <li v-click class="flex gap-3 items-start"><carbon:share class="text-emerald-300 mt-1 shrink-0" /><span>Post every prompt that shipped great work</span></li>
+      <li v-click class="flex gap-3 items-start"><carbon:idea class="text-emerald-300 mt-1 shrink-0" /><span>Borrow generously — your team <em>is</em> your prompt library</span></li>
+      <li v-click class="flex gap-3 items-start"><carbon:chat class="text-emerald-300 mt-1 shrink-0" /><span>Open an <code class="bg-emerald-300/10 px-1 rounded">#ai-tricks</code> channel — one post, one prompt</span></li>
+      <li v-click class="flex gap-3 items-start"><carbon:events class="text-emerald-300 mt-1 shrink-0" /><span>Demo Fridays — 15 min to swap what’s working</span></li>
     </ul>
   </div>
   <div class="col-span-7">
-
-<div class="rounded-2xl bg-gradient-to-br from-emerald-500/15 to-teal-500/10 ring-1 ring-emerald-300/25 p-6 shadow-2xl">
-  <div class="flex items-center gap-2 text-emerald-300 text-[10px] font-mono uppercase tracking-widest opacity-90 mb-3">
-    <carbon:bookmark />
-    Saved instruction
-  </div>
-  <div class="text-xl font-semibold mb-4">“Weekly status update for my manager”</div>
-  <div class="space-y-2.5 text-base opacity-95">
-    <div>Be confident, no jargon.</div>
-    <div>Write 3 short bullets:</div>
-    <div class="pl-5 text-sm opacity-90">
-      <div>· Wins this week</div>
-      <div>· What got blocked</div>
-      <div>· What I’m doing next week</div>
-    </div>
-    <div>Keep it under 100 words.</div>
-  </div>
-  <div class="mt-5 flex justify-between items-center text-xs opacity-60 pt-3 border-t border-emerald-300/15">
-    <span>used 12 times this month</span>
-    <span class="font-mono">★ favorite</span>
-  </div>
-</div>
-
+    <PromptShareChannel />
   </div>
 </div>
 
 <!--
-The real edge isn’t a smarter AI. It’s the small library of instructions you keep refining over time.
+The real edge isn’t a smarter AI. It’s a team where one person’s win becomes everyone’s default in a week. Make sharing the path of least resistance: a single channel, a weekly demo, and a culture of stealing generously.
 -->
 
 ---
