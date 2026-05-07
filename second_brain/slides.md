@@ -80,23 +80,34 @@ class: '!text-left'
 </div>
 
 ---
+layout: two-cols
+layoutClass: gap-10 items-center
 transition: fade-out
+level: 2
 ---
+
 
 # Imagine having a 24/7 assistant
 
 For just $20 per month, but also:
 
-- 🌐 **Knowledgeable** - It has read most of the internet.
-- 🧠 **Analytical** - It has advanced analytical capabilities.
-- ⚡ **Reliable** - It doesn’t get tired / angry / quit.
-- 🚀 **Responsive** - It is incredibly fast at delivering results.
-- ☁️ **Accessible** - Easily accessible from the internet.
-- 🔓 **Open** - Zero ego / zero social friction
-<br>
-<br>
+- 🌐 It has read most of the internet.
+- 🧠 It has advanced analytical capabilities.
+- ⚡ It doesn’t get tired / angry / quit.
+- 🚀 It is incredibly fast at delivering results.
+- ☁️ Easily accessible from the internet.
+- 🔓 Zero ego / zero social friction
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+::right::
+
+<figure v-click class="m-0 pr-2">
+  <img
+    src="/imgs/meme.png"
+    alt="Shut up and take my money meme"
+    class="max-h-[420px] rounded-2xl shadow-2xl"
+  />
+  <figcaption class="text-sm opacity-75 mt-2 text-left">Shut up and take my money!</figcaption>
+</figure>
 
 <!--
 You can have `style` tag in markdown to override the style for the current page.
