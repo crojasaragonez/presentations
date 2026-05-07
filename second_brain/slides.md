@@ -216,37 +216,27 @@ class: '!text-left'
 
 # Externalize your thinking
 
-Ask your favorite tool to build a good base using your existing expertise and start from there.
-Most of the time it outcomes results that are just ready or require minimal tweaking.
+Let your favorite tool draft the first version from your expertise, then take it from there.
+More often than you may think, the output is ready to ship or just a tweak away.
 
 <v-clicks>
 
-- 📝 Generate designer like multimedia content.
-- 💬 Augment your opinions with a better wording.
-- 🪪 Use your role, your style, what you care about
-- 🔁 Build -> Augment/review -> Deliver
+- 📝 Produce designer-grade multimedia content in seconds.
+- 💬 Sharpen your opinions with crisper wording.
+- 🪪 Anchor it in your role, your voice, what you care about.
+- 🔁 Draft → refine → ship.
 
 </v-clicks>
 
 ::right::
 
-<div class="grid gap-3 pr-2">
-  <div v-click class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur-md">
-    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">where</div>
-    <div class="text-lg font-medium mt-1">Notion · Apple Notes · Google Docs</div>
-    <div class="text-sm opacity-70 mt-1">One single place you trust. Easy to search.</div>
-  </div>
-  <div v-click class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur-md">
-    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">when</div>
-    <div class="text-lg font-medium mt-1">5 minutes at the end of the day</div>
-    <div class="text-sm opacity-70 mt-1">What did I learn? What should AI know tomorrow?</div>
-  </div>
-  <div v-click class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur-md">
-    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">how</div>
-    <div class="text-lg font-medium mt-1">Plain words. Bullets. Short sentences.</div>
-    <div class="text-sm opacity-70 mt-1">If a coworker can read it, AI can read it.</div>
-  </div>
-</div>
+<figure class="m-0 pr-2">
+  <img
+    src="/imgs/externalize-thinking-notebook-FsXmqyeCMSM.jpg"
+    alt="Person writing thoughts in a notebook with a pen"
+    class="max-h-[420px] w-full object-cover rounded-2xl shadow-2xl"
+  />
+</figure>
 
 <!--
 You don’t have a memory problem. You have a capture problem. The brain is for thinking; the system is for remembering.
