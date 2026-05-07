@@ -216,14 +216,15 @@ class: '!text-left'
 
 # Externalize your thinking
 
-If it isn’t written somewhere, AI can’t help you with it. Build a small daily habit that catches **meetings, decisions, ideas, mistakes, and lessons.**
+Ask your favorite tool to build a good base using your existing expertise and start from there.
+Most of the time it outcomes results that are just ready or require minimal tweaking.
 
 <v-clicks>
 
-- 📝 Meetings → notes + next steps
-- 💬 Instructions that worked (and the ones that didn’t)
-- 🪪 Your role, your style, what you care about
-- 🔁 Mistakes worth not repeating
+- 📝 Generate designer like multimedia content.
+- 💬 Augment your opinions with a better wording.
+- 🪪 Use your role, your style, what you care about
+- 🔁 Build -> Augment/review -> Deliver
 
 </v-clicks>
 
