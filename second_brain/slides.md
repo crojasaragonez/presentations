@@ -135,6 +135,20 @@ Here is another comment.
 -->
 
 ---
+transition: fade-out
+level: 2
+class: '!text-left'
+---
+
+# What if everyone had Copilot, ChatGPT, and Claude?
+
+If we rolled out licenses org-wide, would that **solve the problem**?
+
+<!--
+Use this to transition: tools for everyone vs. habits, context, and systems (the “second brain” angle).
+-->
+
+---
 transition: slide-up
 level: 2
 ---
