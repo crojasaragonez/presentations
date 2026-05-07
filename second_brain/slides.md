@@ -135,6 +135,8 @@ Here is another comment.
 -->
 
 ---
+layout: two-cols
+layoutClass: gap-10 items-center
 transition: fade-out
 level: 2
 class: '!text-left'
@@ -144,8 +146,27 @@ class: '!text-left'
 
 If we rolled out licenses org-wide, would that **solve the problem**?
 
+::right::
+
+<figure class="m-0 pr-2">
+  <img
+    src="/imgs/team-laptops-org-wide-ak4hmkNSU8g.jpg"
+    alt="Two colleagues working together on laptops at a table"
+    class="max-h-[420px] w-full object-cover rounded-2xl shadow-2xl"
+  />
+  <figcaption class="text-xs opacity-60 mt-2 text-right">
+    <a
+      href="https://unsplash.com/photos/two-people-working-on-laptops-at-a-table-ak4hmkNSU8g"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="border-none font-inherit underline decoration-white/40 hover:opacity-100"
+    >Unsplash</a>
+    · Compagnons
+  </figcaption>
+</figure>
+
 <!--
-Use this to transition: tools for everyone vs. habits, context, and systems (the “second brain” angle).
+That is like giving gym subscriptions to all the company and expect everyone to be in shape withing a few months.
 -->
 
 ---
