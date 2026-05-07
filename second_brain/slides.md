@@ -333,7 +333,7 @@ class: '!text-left'
 
 # Make AI part of your day
 
-The win isn’t “use AI sometimes.” It’s **AI is already working for you** before you open your laptop.
+Go from **using AI when you think of it** to **AI already working for you** before you open your laptop.
 
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
   <div v-click class="rounded-2xl p-4 bg-gradient-to-br from-cyan-500/15 to-indigo-500/10 ring-1 ring-white/10">
