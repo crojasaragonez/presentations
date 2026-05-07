@@ -59,6 +59,28 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 transition: fade-out
+class: '!text-left'
+---
+
+<div class="grid h-full grid-cols-1 gap-10 pt-2 lg:grid-cols-12 lg:gap-10 lg:items-center">
+  <div class="lg:col-span-8 flex flex-col justify-center gap-8">
+    <div class="flex flex-wrap items-center gap-5">
+      <div class="rounded-2xl bg-slate-950/70 p-4 shadow-xl ring-1 ring-white/10">
+        <img src="/golabs/logotipo.png" alt="Golabs" class="w-36" />
+      </div>
+    </div>
+    <p class="m-0 text-xl md:text-2xl leading-snug font-light">
+      Golabs has been helping companies build and scale technology solutions for over 12 years,  6 of them, applying artificial intelligence to real business challenges across multiple industries.
+    </p>
+    <blockquote class="relative m-0 border-none pl-6 text-lg text-teal-200/95 md:text-xl">
+      <span class="pointer-events-none absolute left-0 top-0 bottom-0 w-1 rounded-full bg-gradient-to-b from-cyan-400 to-emerald-500" />
+      Smart Tech by Talented People!
+    </blockquote>
+  </div>
+</div>
+
+---
+transition: fade-out
 ---
 
 # What is Slidev?
