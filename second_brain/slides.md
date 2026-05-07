@@ -83,17 +83,16 @@ class: '!text-left'
 transition: fade-out
 ---
 
-# What is Slidev?
+# Imagine having a 24/7 assistant
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+For just $20 per month, but also:
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
+- 🌐 **Knowledgeable** - It has read most of the internet.
+- 🧠 **Analytical** - It has advanced analytical capabilities.
+- ⚡ **Reliable** - It doesn’t get tired / angry / quit.
+- 🚀 **Responsive** - It is incredibly fast at delivering results.
+- ☁️ **Accessible** - Easily accessible from the internet.
+- 🔓 **Open** - Zero ego / zero social friction
 <br>
 <br>
 
