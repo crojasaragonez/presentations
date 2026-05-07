@@ -1,26 +1,16 @@
 ---
-# try also 'default' to start simple
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
 title: IA Agéntica
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## IA Agéntica
 
-  Learn more at [Sli.dev](https://sli.dev)
-# apply UnoCSS classes to the current slide
+  Una introducción práctica a agentes y multi-agentes de IA usando la analogía de un restaurante.
 class: text-center
-# https://sli.dev/features/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
 transition: slide-left
-# enable Comark Syntax: https://comark.dev/syntax/markdown
 comark: true
-# duration of the presentation
 duration: 35min
 ---
 
@@ -28,11 +18,13 @@ duration: 35min
 
 La IA deja de conversar y empieza a trabajar.
 
-<img
-  src="/golabs/logotipo.png"
-  alt="Golabs"
-  class="absolute top-8 right-8 w-34 opacity-90"
-/>
+<div class="absolute top-8 right-8 rounded-xl bg-slate-950/80 px-4 py-3 shadow-lg ring-1 ring-white/10">
+  <img
+    src="/golabs/logotipo.png"
+    alt="Golabs"
+    class="w-34"
+  />
+</div>
 
 <div class="absolute bottom-0 left-0 right-0 pb-8 px-6 text-center text-sm opacity-90">
   <div>Carlos Luis Rojas Aragonés</div>
@@ -184,17 +176,10 @@ El **agente** es el rol que, frente al pedido y con el conocimiento a mano, **no
 
 ::right::
 
-<figure class="m-0 pr-2">
-  <img
-    src="/agent/latin-man-cooking-kitchen.jpg"
-    alt="Persona en cocina preparando ensalada o salsa con ingredientes: interpretar, decidir y actuar con lo disponible"
-    class="rounded-lg object-cover w-full max-h-80 shadow-md"
-  />
-  <figcaption class="text-sm opacity-75 mt-2 text-left">Preparación activa: receta mental, pasos e ingredientes al mismo tiempo, como un agente ante un objetivo</figcaption>
-</figure>
+<AgentCycle />
 
 <!--
-Analogía: agente = quien interpreta el prompt, planifica y orquesta. Imagen: Unsplash (Getty). Misma foto que https://unsplash.com/photos/CPvzjNGg0Dk; revisa términos Unsplash+ si aplica a tu uso.
+Analogía: agente = quien interpreta el prompt, planifica, actúa y ajusta.
 -->
 
 ---
@@ -234,6 +219,10 @@ level: 2
 
 # ¿Cómo empiezo?
 
+<div class="mx-auto mt-8 max-w-2xl text-2xl leading-relaxed opacity-85">
+No empiece por la arquitectura: empiece por una decisión operativa concreta.
+</div>
+
 ---
 transition: fade-out
 level: 2
@@ -241,16 +230,28 @@ level: 2
 
 # Ideas para empezar a incluir la IA
 
-<v-clicks>
+<div class="grid grid-cols-3 gap-5 pt-6">
+  <div v-click class="rounded-xl border border-slate-300/60 p-5 shadow-sm dark:border-white/15 dark:bg-white/5">
+    <div class="text-xl font-bold">1. Reglas</div>
+    <p class="mt-3 text-sm leading-relaxed opacity-80">
+      Defina política de uso, datos que no salen del perímetro, revisión humana y responsabilidad.
+    </p>
+  </div>
 
-- **Normar el uso cotidiano**: plantillas de prompt, política de uso de modelos externos, canal interno para dudas y incidentes.
-- **Defina un budget para herramientas de AI internas**: y deje a su equipo escoger las herramientas.
-- **Plan piloto con voluntarios**: comente qué funcionó, qué no, y por qué.
-- **Elegir un caso acotado** con impacto visible y bajo riesgo (una tarea repetitiva, un documento tipo, un flujo interno), en lugar de un “programa IA” abstracto.
-- **Definir reglas antes de herramientas**: qué datos no salen del perímetro, revisión humana obligatoria, y quién es responsable si algo falla.
-- **Medir algo concreto**: tiempo ahorrado, errores detectados, satisfacción del usuario interno… sin métricas, es difícil justificar siguientes pasos.
+  <div v-click class="rounded-xl border border-slate-300/60 p-5 shadow-sm dark:border-white/15 dark:bg-white/5">
+    <div class="text-xl font-bold">2. Piloto</div>
+    <p class="mt-3 text-sm leading-relaxed opacity-80">
+      Escoja un caso acotado, visible y de bajo riesgo con voluntarios y budget claro.
+    </p>
+  </div>
 
-</v-clicks>
+  <div v-click class="rounded-xl border border-slate-300/60 p-5 shadow-sm dark:border-white/15 dark:bg-white/5">
+    <div class="text-xl font-bold">3. Medición</div>
+    <p class="mt-3 text-sm leading-relaxed opacity-80">
+      Mida tiempo ahorrado, errores detectados y satisfacción del usuario interno.
+    </p>
+  </div>
+</div>
 
 <!--
 Puente desde multi-agentes hacia práctica organizacional; ajustar ejemplos a la audiencia (Golabs / sector).
@@ -290,11 +291,13 @@ level: 2
 
 # ¿Necesita ayuda para empezar?
 
-<img
-  src="/golabs/logotipo.png"
-  alt="Golabs"
-  class="absolute top-8 right-8 w-34 opacity-90"
-/>
+<div class="absolute top-8 right-8 rounded-xl bg-slate-950/80 px-4 py-3 shadow-lg ring-1 ring-white/10">
+  <img
+    src="/golabs/logotipo.png"
+    alt="Golabs"
+    class="w-34"
+  />
+</div>
 
 <div class="mx-auto mt-8 max-w-3xl text-2xl leading-relaxed">
 Puedo acompañarle a identificar casos de uso, diseñar pilotos seguros y convertir la IA en capacidades reales para su equipo.
