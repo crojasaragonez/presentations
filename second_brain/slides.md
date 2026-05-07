@@ -212,7 +212,7 @@ level: 2
 class: '!text-left'
 ---
 
-<div class="text-cyan-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 01 · CAPTURE</div>
+<div class="text-cyan-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 01 · LEARN</div>
 
 # Externalize your thinking
 
@@ -239,7 +239,7 @@ More often than you may think, the output is ready to ship or just a tweak away.
 </figure>
 
 <!--
-You don’t have a memory problem. You have a capture problem. The brain is for thinking; the system is for remembering.
+You don’t have a memory problem. You have a Learn problem. The brain is for thinking; the system is for remembering.
 -->
 
 ---
@@ -248,7 +248,7 @@ level: 2
 class: '!text-left'
 ---
 
-<div class="text-emerald-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 02 · CURATE</div>
+<div class="text-emerald-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 02 · REFINE</div>
 
 # use the "wisdom of the crowd" and everyone wins
 
@@ -360,7 +360,7 @@ Go from **using AI when you think of it** to **AI already working for you** befo
 
 <div v-click class="mt-6 text-sm opacity-75">
   <span class="font-mono uppercase tracking-widest text-[10px] opacity-60 mr-2">where it lives</span>
-  Already inside ChatGPT, Claude &amp; Gemini · your calendar &amp; email · simple no-code tools
+  Already inside Copilot, ChatGPT, Claude &amp; Gemini · your calendar &amp; email · simple no-code tools
 </div>
 
 <!--
@@ -427,38 +427,38 @@ class: '!text-left'
 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
   <div v-click class="rounded-2xl p-5 bg-gradient-to-b from-cyan-500/15 to-cyan-500/5 ring-1 ring-cyan-300/20">
     <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">Week 1</div>
-    <div class="mt-1 text-xl font-semibold text-cyan-200">Capture</div>
+    <div class="mt-1 text-xl font-semibold text-cyan-200">Learn</div>
     <ul class="mt-3 text-sm opacity-90 space-y-1 list-disc pl-4">
-      <li>Pick one place to write everything down</li>
-      <li>Daily 5-min journal</li>
-      <li>Save every instruction that worked</li>
+      <li>Draft your next email, doc or deck with AI first</li>
+      <li>Anchor every chat in your role &amp; your voice</li>
+      <li>Save every instruction that shipped great work</li>
     </ul>
   </div>
   <div v-click class="rounded-2xl p-5 bg-gradient-to-b from-emerald-500/15 to-emerald-500/5 ring-1 ring-emerald-300/20">
     <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">Week 2</div>
-    <div class="mt-1 text-xl font-semibold text-emerald-200">Curate</div>
+    <div class="mt-1 text-xl font-semibold text-emerald-200">Refine</div>
     <ul class="mt-3 text-sm opacity-90 space-y-1 list-disc pl-4">
-      <li>10 favorite instructions, saved</li>
-      <li>Two AI “characters” you can call on</li>
-      <li>Share them with your team</li>
+      <li>Open an <code class="bg-emerald-300/10 px-1 rounded">#ai-tricks</code> channel and post 3 prompts</li>
+      <li>Steal one prompt from a teammate, ship with it</li>
+      <li>Run a 15-min Demo Friday</li>
     </ul>
   </div>
   <div v-click class="rounded-2xl p-5 bg-gradient-to-b from-violet-500/15 to-violet-500/5 ring-1 ring-violet-300/20">
     <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">Week 3</div>
     <div class="mt-1 text-xl font-semibold text-violet-200">Connect</div>
     <ul class="mt-3 text-sm opacity-90 space-y-1 list-disc pl-4">
-      <li>Set up 1 personal AI workspace</li>
-      <li>Upload your files into it</li>
-      <li>Turn on memory</li>
+      <li>Upload your résumé, slides &amp; team playbook</li>
+      <li>Turn on memory: role, voice, preferences</li>
+      <li>Connect calendar, email and one work app</li>
     </ul>
   </div>
   <div v-click class="rounded-2xl p-5 bg-gradient-to-b from-amber-500/15 to-amber-500/5 ring-1 ring-amber-300/20">
     <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">Week 4</div>
     <div class="mt-1 text-xl font-semibold text-amber-200">Automate + Measure</div>
     <ul class="mt-3 text-sm opacity-90 space-y-1 list-disc pl-4">
-      <li>1 daily helper running for you</li>
-      <li>Track the time it saves you</li>
-      <li>Hold a Friday review</li>
+      <li>Ship 1 daily helper: morning brief or inbox</li>
+      <li>Log time saved &amp; keep rate per task</li>
+      <li>Hold your first Friday review</li>
     </ul>
   </div>
 </div>
@@ -498,8 +498,8 @@ background: /imgs/horizon-sunrise-A4iL43vunlY.jpg
 </p>
 
 <div class="mt-10 flex flex-wrap justify-center gap-2 text-xs">
-  <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Capture</span>
-  <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Curate</span>
+  <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Learn</span>
+  <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Refine</span>
   <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Connect</span>
   <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Automate</span>
   <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Measure</span>
@@ -522,5 +522,60 @@ h1 .brand {
 </style>
 
 <!--
-Closing thought: the playbook is small on purpose. Capture, Curate, Connect, Automate, Measure, repeat. The compounding does the rest.
+Closing thought: the playbook is small on purpose. Learn, Refine, Connect, Automate, Measure, repeat. The compounding does the rest.
+-->
+
+---
+layout: cover
+class: text-center
+transition: fade
+---
+
+<div class="absolute inset-0 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950" />
+<div class="absolute inset-0 opacity-40" style="background: radial-gradient(circle at 30% 20%, rgba(103, 232, 249, 0.25), transparent 45%), radial-gradient(circle at 70% 80%, rgba(167, 139, 250, 0.25), transparent 45%);" />
+
+<div class="relative flex flex-col items-center justify-center h-full">
+
+<div class="text-cyan-300 text-xs font-mono tracking-[0.4em] opacity-80 mb-4">END OF PLAYBOOK</div>
+
+# <span class="brand">Thank you</span>
+
+<p class="mt-6 text-lg md:text-xl opacity-90 max-w-xl mx-auto font-light">
+  Now go build your Second Brain.
+</p>
+
+<div class="mt-10 flex items-center justify-center gap-3">
+  <div class="rounded-2xl bg-slate-950/70 px-5 py-3 shadow-xl ring-1 ring-white/10">
+    <img src="/golabs/logotipo.png" alt="Golabs" class="w-32" />
+  </div>
+</div>
+
+<div class="mt-8 text-sm opacity-80">
+  <div class="font-medium">Carlos Luis Rojas Aragonés</div>
+  <div class="mt-1 flex items-center justify-center gap-3 text-xs opacity-75">
+    <span>Golabs · AI Fluency Program</span>
+    <span class="opacity-40">·</span>
+    <span>2026</span>
+  </div>
+</div>
+
+</div>
+
+<style>
+h1 {
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 800;
+  margin: 0;
+}
+h1 .brand {
+  background: linear-gradient(120deg, #67e8f9 0%, #818cf8 50%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+</style>
+
+<!--
+Wrap up, invite questions, and point them at the next session of the AI Fluency Program.
 -->
