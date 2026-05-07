@@ -91,12 +91,16 @@ level: 2
 
 For just $20 per month, but also:
 
+<v-clicks>
+
 - 🌐 It has read most of the internet.
 - 🧠 It has advanced analytical capabilities.
 - ⚡ It doesn’t get tired / angry / quit.
 - 🚀 It is incredibly fast at delivering results.
 - ☁️ Easily accessible from the internet.
 - 🔓 Zero ego / zero social friction
+
+</v-clicks>
 
 ::right::
 
@@ -106,7 +110,7 @@ For just $20 per month, but also:
     alt="Shut up and take my money meme"
     class="max-h-[420px] rounded-2xl shadow-2xl"
   />
-  <figcaption class="text-sm opacity-75 mt-2 text-left">Shut up and take my money!</figcaption>
+  <figcaption class="text-sm opacity-75 mt-2 text-left">Where do I sign?</figcaption>
 </figure>
 
 <!--
