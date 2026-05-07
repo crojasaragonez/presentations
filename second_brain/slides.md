@@ -154,592 +154,404 @@ If we rolled out licenses org-wide, would that **solve the problem**?
     alt="Two colleagues working together on laptops at a table"
     class="max-h-[420px] w-full object-cover rounded-2xl shadow-2xl"
   />
-  <figcaption class="text-xs opacity-60 mt-2 text-right">
-    <a
-      href="https://unsplash.com/photos/two-people-working-on-laptops-at-a-table-ak4hmkNSU8g"
-      target="_blank"
-      rel="noreferrer noopener"
-      class="border-none font-inherit underline decoration-white/40 hover:opacity-100"
-    >Unsplash</a>
-    · Compagnons
-  </figcaption>
 </figure>
 
 <!--
-That is like giving gym subscriptions to all the company and expect everyone to be in shape withing a few months.
+That is like giving gym subscriptions to all the company and expecting everyone to be in shape within a few months.
 -->
 
 ---
+layout: cover
+class: text-center
 transition: slide-up
-level: 2
+background: /imgs/second-brain-abstract-5zfkHMkccjc.jpg
 ---
 
-# Navigation
+<div class="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-950/40 to-slate-950/80" />
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
+<div class="relative">
 
-## Keyboard Shortcuts
+<div class="text-cyan-300 text-xs font-mono tracking-[0.4em] opacity-80 mb-4">THE PLAYBOOK</div>
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
+# Build your <span class="brand">Second Brain</span>
 
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+<p class="mt-4 text-xl md:text-2xl font-light opacity-90 max-w-2xl mx-auto">
+  Make AI a real part of your work and your life.
+</p>
 
----
-layout: two-cols
-layoutClass: gap-16
----
+<div class="mt-10 inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 text-sm backdrop-blur-md ring-1 ring-white/20">
+  <carbon:idea class="text-cyan-300" />
+  5 simple steps · zero hype
+</div>
 
-# Table of contents
+</div>
 
-You can use the `Toc` component to generate a table of contents for your slides:
-
-```html
-<Toc minDepth="1" maxDepth="1" />
-```
-
-The title will be inferred from your slide content, or you can override it with `title` and `level` in your frontmatter.
-
-::right::
-
-<Toc text-sm minDepth="1" maxDepth="2" />
-
----
-layout: image-right
-image: https://cover.sli.dev
----
-
-# Code
-
-Use code snippets and get the highlighting directly, and even types hover!
-
-```ts [filename-example.ts] {all|4|6|6-7|9|all} twoslash
-// TwoSlash enables TypeScript hover information
-// and errors in markdown code blocks
-// More at https://shiki.style/packages/twoslash
-import { computed, ref } from 'vue'
-
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
-
-doubled.value = 2
-```
-
-<arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="342" color="#953" width="2" arrowSize="1" />
-
-<!-- This allow you to embed external code blocks -->
-<<< @/snippets/external.ts#snippet
-
-<!-- Footer -->
-
-[Learn more](https://sli.dev/features/line-highlighting)
-
-<!-- Inline style -->
 <style>
-.footnotes-sep {
-  @apply mt-5 opacity-10;
+h1 {
+  font-size: 3.6rem;
+  line-height: 1.05;
+  font-weight: 700;
 }
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
+h1 .brand {
+  background: linear-gradient(120deg, #67e8f9 0%, #818cf8 50%, #c4b5fd 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 </style>
 
 <!--
-Notes can also sync with clicks
-
-[click] This will be highlighted after the first click
-
-[click] Highlighted with `count = ref(0)`
-
-[click:3] Last click (skip two clicks)
+The tools are the easy part. The hard part is the system around them. Next 5 slides: a small, repeatable playbook anyone can run in 30 days.
 -->
 
 ---
+layout: two-cols
+layoutClass: gap-10 items-center
+transition: fade-out
 level: 2
+class: '!text-left'
 ---
 
-# Shiki Magic Move
+<div class="text-cyan-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 01 · CAPTURE</div>
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/), Slidev supports animations across multiple code snippets.
+# Externalize your thinking
 
-Add multiple code blocks and wrap them with <code>````md magic-move</code> (four backticks) to enable the magic move. For example:
+If it isn’t written somewhere, AI can’t help you with it. Build a small daily habit that catches **meetings, decisions, ideas, mistakes, and lessons.**
 
-````md magic-move {lines: true}
-```ts {*|2|*}
-// step 1
-const author = reactive({
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
-```
+<v-clicks>
 
-```ts {*|1-2|3-4|3-4,8}
-// step 2
-export default {
-  data() {
-    return {
-      author: {
-        name: 'John Doe',
-        books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
-```
+- 📝 Meetings → notes + next steps
+- 💬 Instructions that worked (and the ones that didn’t)
+- 🪪 Your role, your style, what you care about
+- 🔁 Mistakes worth not repeating
 
-```ts
-// step 3
-export default {
-  data: () => ({
-    author: {
-      name: 'John Doe',
-      books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
-```
+</v-clicks>
 
-Non-code blocks are ignored.
+::right::
 
-```vue
-<!-- step 4 -->
-<script setup>
-const author = {
-  name: 'John Doe',
-  books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
-</script>
-```
-````
-
----
-
-# Components
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-You can use Vue components directly inside your slides.
-
-We have provided a few built-in components like `<Tweet/>`, `<BlueSky/>`, and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
+<div class="grid gap-3 pr-2">
+  <div v-click class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur-md">
+    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">where</div>
+    <div class="text-lg font-medium mt-1">Notion · Apple Notes · Google Docs</div>
+    <div class="text-sm opacity-70 mt-1">One single place you trust. Easy to search.</div>
+  </div>
+  <div v-click class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur-md">
+    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">when</div>
+    <div class="text-lg font-medium mt-1">5 minutes at the end of the day</div>
+    <div class="text-sm opacity-70 mt-1">What did I learn? What should AI know tomorrow?</div>
+  </div>
+  <div v-click class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur-md">
+    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">how</div>
+    <div class="text-lg font-medium mt-1">Plain words. Bullets. Short sentences.</div>
+    <div class="text-sm opacity-70 mt-1">If a coworker can read it, AI can read it.</div>
+  </div>
 </div>
 
 <!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
+You don’t have a memory problem. You have a capture problem. The brain is for thinking; the system is for remembering.
 -->
 
 ---
-class: px-20
+transition: fade-out
+level: 2
+class: '!text-left'
 ---
 
-# Themes
+<div class="text-emerald-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 02 · CURATE</div>
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+# Save your favorite instructions
 
-<div grid="~ cols-2 gap-2" m="t-2">
+When you find an instruction that gives a great answer, **don’t throw it away — save it.** Tomorrow you’ll be glad you did.
 
-```yaml
----
-theme: default
----
-```
+<div class="grid grid-cols-12 gap-6 mt-4 items-start">
+  <div class="col-span-5">
+    <ul class="space-y-3 text-base list-none p-0">
+      <li v-click class="flex gap-3 items-start"><carbon:bookmark class="text-emerald-300 mt-1 shrink-0" /><span>Save the instructions that worked</span></li>
+      <li v-click class="flex gap-3 items-start"><carbon:user-avatar class="text-emerald-300 mt-1 shrink-0" /><span>Tell AI <em>who to be</em>: your tone, your style</span></li>
+      <li v-click class="flex gap-3 items-start"><carbon:compare class="text-emerald-300 mt-1 shrink-0" /><span>Try two versions — keep the one you like best</span></li>
+      <li v-click class="flex gap-3 items-start"><carbon:group class="text-emerald-300 mt-1 shrink-0" /><span>Share with your team — everyone wins</span></li>
+    </ul>
+  </div>
+  <div class="col-span-7">
 
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true" alt="">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" alt="">
-
+<div class="rounded-2xl bg-gradient-to-br from-emerald-500/15 to-teal-500/10 ring-1 ring-emerald-300/25 p-6 shadow-2xl">
+  <div class="flex items-center gap-2 text-emerald-300 text-[10px] font-mono uppercase tracking-widest opacity-90 mb-3">
+    <carbon:bookmark />
+    Saved instruction
+  </div>
+  <div class="text-xl font-semibold mb-4">“Weekly status update for my manager”</div>
+  <div class="space-y-2.5 text-base opacity-95">
+    <div>Be confident, no jargon.</div>
+    <div>Write 3 short bullets:</div>
+    <div class="pl-5 text-sm opacity-90">
+      <div>· Wins this week</div>
+      <div>· What got blocked</div>
+      <div>· What I’m doing next week</div>
+    </div>
+    <div>Keep it under 100 words.</div>
+  </div>
+  <div class="mt-5 flex justify-between items-center text-xs opacity-60 pt-3 border-t border-emerald-300/15">
+    <span>used 12 times this month</span>
+    <span class="font-mono">★ favorite</span>
+  </div>
 </div>
 
-Read more about [How to use a theme](https://sli.dev/guide/theme-addon#use-theme) and
-check out the [Awesome Themes Gallery](https://sli.dev/resources/theme-gallery).
-
----
-
-# Clicks Animations
-
-You can add `v-click` to elements to add a click animation.
-
-<div v-click>
-
-This shows up when you press <kbd>space</kbd> or <kbd>right</kbd>, or click outside the slide on the right.
-
-```html
-<div v-click>This shows up when you trigger a click animation.</div>
-```
-
+  </div>
 </div>
 
-<p v-click>
-You can also add modifiers to change the animation:
+<!--
+The real edge isn’t a smarter AI. It’s the small library of instructions you keep refining over time.
+-->
+
+---
+transition: fade-out
+level: 2
+class: '!text-left'
+---
+
+<div class="text-violet-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 03 · CONNECT</div>
+
+# Give it everything it needs to know about you
+
+Stop copy-pasting the same background every time. Give AI your context **once** — and it stops feeling like a stranger.
+
+<div class="flex items-stretch justify-between gap-3 mt-6">
+  <div v-click class="flex-1 rounded-2xl bg-gradient-to-br from-violet-500/20 to-violet-500/5 p-5 ring-1 ring-violet-300/25 text-center">
+    <div class="text-3xl mb-2">📂</div>
+    <div class="text-base font-semibold">What you know</div>
+    <div class="text-xs opacity-75 mt-1">files, notes, preferences</div>
+  </div>
+  <div class="self-center text-2xl text-violet-300 opacity-60"><carbon:arrow-right /></div>
+  <div v-click class="flex-1 rounded-2xl bg-gradient-to-br from-violet-500/20 to-violet-500/5 p-5 ring-1 ring-violet-300/25 text-center">
+    <div class="text-3xl mb-2">🤖</div>
+    <div class="text-base font-semibold">Your AI assistant</div>
+    <div class="text-xs opacity-75 mt-1">ChatGPT · Claude · Gemini · Copilot</div>
+  </div>
+  <div class="self-center text-2xl text-violet-300 opacity-60"><carbon:arrow-right /></div>
+  <div v-click class="flex-1 rounded-2xl bg-gradient-to-br from-violet-500/20 to-violet-500/5 p-5 ring-1 ring-violet-300/25 text-center">
+    <div class="text-3xl mb-2">💡</div>
+    <div class="text-base font-semibold">Answers made for you</div>
+    <div class="text-xs opacity-75 mt-1">no more starting from zero</div>
+  </div>
+</div>
+
+<div class="grid grid-cols-3 gap-4 mt-6">
+  <div v-click class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur-md">
+    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">your files</div>
+    <div class="text-sm mt-1">Upload your résumé, your slides, your team’s playbook.</div>
+  </div>
+  <div v-click class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur-md">
+    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">memory</div>
+    <div class="text-sm mt-1">Turn it on. It remembers your role, voice, and preferences between chats.</div>
+  </div>
+  <div v-click class="rounded-xl bg-white/5 p-4 ring-1 ring-white/10 backdrop-blur-md">
+    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">your apps</div>
+    <div class="text-sm mt-1">Connect calendar, email, Drive, Notion — already built into the AI you use.</div>
+  </div>
+</div>
+
+<!--
+This is the difference between a generic answer and one that actually fits your role, your team, your voice.
+-->
+
+---
+transition: fade-out
+level: 2
+class: '!text-left'
+---
+
+<div class="text-amber-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 04 · AUTOMATE</div>
+
+# Make AI part of your day
+
+The win isn’t “use AI sometimes.” It’s **AI is already working for you** before you open your laptop.
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+  <div v-click class="rounded-2xl p-4 bg-gradient-to-br from-cyan-500/15 to-indigo-500/10 ring-1 ring-white/10">
+    <carbon:sunrise class="text-2xl text-cyan-300" />
+    <div class="mt-3 font-semibold">Morning brief</div>
+    <div class="text-xs opacity-75 mt-1">Your calendar, emails and priorities, summarized at 8 a.m.</div>
+  </div>
+  <div v-click class="rounded-2xl p-4 bg-gradient-to-br from-emerald-500/15 to-teal-500/10 ring-1 ring-white/10">
+    <carbon:email class="text-2xl text-emerald-300" />
+    <div class="mt-3 font-semibold">Inbox helper</div>
+    <div class="text-xs opacity-75 mt-1">Drafts replies in your voice. Flags what really matters.</div>
+  </div>
+  <div v-click class="rounded-2xl p-4 bg-gradient-to-br from-violet-500/15 to-fuchsia-500/10 ring-1 ring-white/10">
+    <carbon:notebook class="text-2xl text-violet-300" />
+    <div class="mt-3 font-semibold">Meeting recap</div>
+    <div class="text-xs opacity-75 mt-1">The call, turned into decisions, owners, and dates — in your inbox.</div>
+  </div>
+  <div v-click class="rounded-2xl p-4 bg-gradient-to-br from-amber-500/15 to-orange-500/10 ring-1 ring-white/10">
+    <carbon:chart-line class="text-2xl text-amber-300" />
+    <div class="mt-3 font-semibold">Weekly review</div>
+    <div class="text-xs opacity-75 mt-1">What got done, what slipped, what’s next.</div>
+  </div>
+</div>
+
+<div v-click class="mt-6 text-sm opacity-75">
+  <span class="font-mono uppercase tracking-widest text-[10px] opacity-60 mr-2">where it lives</span>
+  Already inside ChatGPT, Claude &amp; Gemini · your calendar &amp; email · simple no-code tools
+</div>
+
+<!--
+Think of each helper as a tiny assistant that never sleeps, never complains, and shows up before you do.
+-->
+
+---
+layout: two-cols-header
+transition: fade-out
+level: 2
+class: '!text-left'
+---
+
+<div class="text-fuchsia-300 text-xs font-mono tracking-[0.3em] opacity-80">STEP 05 · MEASURE</div>
+
+# What gets measured gets better
+
+::left::
+
+<div class="space-y-6 pr-4">
+  <div v-click>
+    <div class="text-3xl font-bold bg-gradient-to-r from-cyan-300 to-indigo-300 bg-clip-text text-transparent">
+      ⏱ &nbsp;Time saved
+    </div>
+    <div class="text-sm opacity-75 mt-1">Per task, per week. If it isn’t faster, change the instruction — or drop it.</div>
+  </div>
+  <div v-click>
+    <div class="text-3xl font-bold bg-gradient-to-r from-emerald-300 to-teal-300 bg-clip-text text-transparent">
+      🎯 &nbsp;Keep rate
+    </div>
+    <div class="text-sm opacity-75 mt-1">How often you keep what AI gives you, with little or no editing.</div>
+  </div>
+</div>
+
+::right::
+
+<div class="space-y-6 pl-4">
+  <div v-click>
+    <div class="text-3xl font-bold bg-gradient-to-r from-violet-300 to-fuchsia-300 bg-clip-text text-transparent">
+      📓 &nbsp;Mistake notebook
+    </div>
+    <div class="text-sm opacity-75 mt-1">Note every wrong answer. Fix the instruction or give it more context.</div>
+  </div>
+  <div v-click>
+    <div class="text-3xl font-bold bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent">
+      🔁 &nbsp;Friday review
+    </div>
+    <div class="text-sm opacity-75 mt-1">Once a week: drop what didn’t help. Double down on what did.</div>
+  </div>
+</div>
+
+<!--
+You don’t need a dashboard. A simple Friday check-in beats any shiny new tool.
+-->
+
+---
+transition: fade-out
+level: 2
+class: '!text-left'
+---
+
+# Your first <span class="brand">30 days</span>
+
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
+  <div v-click class="rounded-2xl p-5 bg-gradient-to-b from-cyan-500/15 to-cyan-500/5 ring-1 ring-cyan-300/20">
+    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">Week 1</div>
+    <div class="mt-1 text-xl font-semibold text-cyan-200">Capture</div>
+    <ul class="mt-3 text-sm opacity-90 space-y-1 list-disc pl-4">
+      <li>Pick one place to write everything down</li>
+      <li>Daily 5-min journal</li>
+      <li>Save every instruction that worked</li>
+    </ul>
+  </div>
+  <div v-click class="rounded-2xl p-5 bg-gradient-to-b from-emerald-500/15 to-emerald-500/5 ring-1 ring-emerald-300/20">
+    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">Week 2</div>
+    <div class="mt-1 text-xl font-semibold text-emerald-200">Curate</div>
+    <ul class="mt-3 text-sm opacity-90 space-y-1 list-disc pl-4">
+      <li>10 favorite instructions, saved</li>
+      <li>Two AI “characters” you can call on</li>
+      <li>Share them with your team</li>
+    </ul>
+  </div>
+  <div v-click class="rounded-2xl p-5 bg-gradient-to-b from-violet-500/15 to-violet-500/5 ring-1 ring-violet-300/20">
+    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">Week 3</div>
+    <div class="mt-1 text-xl font-semibold text-violet-200">Connect</div>
+    <ul class="mt-3 text-sm opacity-90 space-y-1 list-disc pl-4">
+      <li>Set up 1 personal AI workspace</li>
+      <li>Upload your files into it</li>
+      <li>Turn on memory</li>
+    </ul>
+  </div>
+  <div v-click class="rounded-2xl p-5 bg-gradient-to-b from-amber-500/15 to-amber-500/5 ring-1 ring-amber-300/20">
+    <div class="text-[10px] font-mono uppercase tracking-widest opacity-60">Week 4</div>
+    <div class="mt-1 text-xl font-semibold text-amber-200">Automate + Measure</div>
+    <ul class="mt-3 text-sm opacity-90 space-y-1 list-disc pl-4">
+      <li>1 daily helper running for you</li>
+      <li>Track the time it saves you</li>
+      <li>Hold a Friday review</li>
+    </ul>
+  </div>
+</div>
+
+<div v-click class="mt-10 text-center text-sm opacity-70">
+  Small. Boring. Repeatable. <span class="opacity-60">→</span> Compounding.
+</div>
+
+<style>
+h1 .brand {
+  background: linear-gradient(120deg, #67e8f9 0%, #34d399 50%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+</style>
+
+<!--
+This isn’t a New Year’s resolution. Four weeks, one habit per week. By Week 5 you’re running with a system.
+-->
+
+---
+layout: cover
+class: text-center
+transition: fade
+background: /imgs/horizon-sunrise-A4iL43vunlY.jpg
+---
+
+<div class="absolute inset-0 bg-gradient-to-b from-slate-950/55 via-slate-950/30 to-slate-950/80" />
+
+<div class="relative">
+
+# Your second brain works <span class="brand">while you sleep</span>
+
+<p class="mt-6 text-lg md:text-xl opacity-95 max-w-2xl mx-auto font-light">
+  You don’t need a smarter AI. You need to give it what only you know.
 </p>
 
-<div class="grid gap-3 mt-4 text-sm" style="grid-template-columns: repeat(3, 1fr) 1.5fr 1fr">
-  <div v-after.up class="p-3 rounded border border-primary/20 bg-primary/10">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.up</div>
-    <div>Slide from bottom</div>
-  </div>
-  <div v-click.fade-in class="p-3 rounded border border-primary/30 bg-primary/15">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.fade-in</div>
-    <div>Fade in</div>
-  </div>
-  <div v-click.fade class="p-3 rounded border border-primary/40 bg-primary/20">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.fade</div>
-    <div>Dim (0.5 opacity)</div>
-  </div>
-  <div v-click.fade.right.scale class="p-3 rounded border border-primary/50 bg-primary/25">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.fade.right.scale</div>
-    <div>Composed</div>
-  </div>
-  <div v-click.none class="p-3 rounded border border-primary/60 bg-primary/30">
-    <div class="font-mono text-xs opacity-60 mb-1">v-click.none</div>
-    <div>No transition</div>
-  </div>
+<div class="mt-10 flex flex-wrap justify-center gap-2 text-xs">
+  <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Capture</span>
+  <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Curate</span>
+  <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Connect</span>
+  <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Automate</span>
+  <span class="rounded-full bg-white/15 backdrop-blur-md px-4 py-1 ring-1 ring-white/25">Measure</span>
 </div>
-
-<v-click>
-
-The <span v-mark.red="7"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="8">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
-```html
-<span v-mark.underline.orange>inline markers</span>
-```
-
-</v-click>
-
-<div v-click mt-12>
-
-[Learn more](https://sli.dev/guide/animations#click-animation)
 
 </div>
 
----
-
-# Motions
-
-Motion animations are powered by [@vueuse/motion](https://motion.vueuse.org/), triggered by `v-motion` directive.
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }"
-  :click-3="{ x: 80 }"
-  :leave="{ x: 1000 }"
->
-  Slidev
-</div>
-```
-
-<div class="w-60 relative">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute inset-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
-
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
+<style>
+h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  font-weight: 700;
 }
-</script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 30, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn more](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
----
-
-# $\LaTeX$
-
-$\LaTeX$ is supported out-of-box. Powered by [$\KaTeX$](https://katex.org/).
-
-<div h-3 />
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{aligned}
-\nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
-\nabla \cdot \vec{B} &= 0 \\
-\nabla \times \vec{E} &= -\frac{\partial\vec{B}}{\partial t} \\
-\nabla \times \vec{B} &= \mu_0\vec{J} + \mu_0\varepsilon_0\frac{\partial\vec{E}}{\partial t}
-\end{aligned}
-$$
-
-[Learn more](https://sli.dev/features/latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectiveness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
+h1 .brand {
+  background: linear-gradient(120deg, #fde047 0%, #fb923c 50%, #f43f5e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
+</style>
 
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
-
----
-foo: bar
-dragPos:
-  square: 691,32,167,_,-16
----
-
-# Draggable Elements
-
-Double-click on the draggable elements to edit their positions.
-
-<br>
-
-###### Directive Usage
-
-```md
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-```
-
-<br>
-
-###### Component Usage
-
-```md
-<v-drag text-3xl>
-  <div class="i-carbon:arrow-up" />
-  Use the `v-drag` component to have a draggable container!
-</v-drag>
-```
-
-<v-drag pos="663,206,261,_,-15">
-  <div text-center text-3xl border border-main rounded>
-    Double-click me!
-  </div>
-</v-drag>
-
-<img v-drag="'square'" src="https://sli.dev/logo.png">
-
-###### Draggable Arrow
-
-```md
-<v-drag-arrow two-way />
-```
-
-<v-drag-arrow pos="67,452,253,46" two-way op70 />
-
----
-src: ./pages/imported-slides.md
-hide: false
----
-
----
-
-# Monaco Editor
-
-Slidev provides built-in Monaco Editor support.
-
-Add `{monaco}` to the code block to turn it into an editor:
-
-```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
-
-const arr = ref(emptyArray(10))
-```
-
-Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
-
-```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
-
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
-```
-
----
-layout: center
-class: text-center
----
-
-# Learn More
-
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/resources/showcases)
-
-<PoweredBySlidev mt-10 />
+<!--
+Closing thought: the playbook is small on purpose. Capture, Curate, Connect, Automate, Measure — repeat. The compounding does the rest.
+-->
