@@ -176,7 +176,13 @@ El **agente** es el rol que, frente al pedido y con el conocimiento a mano, **no
 
 ::right::
 
-<AgentCycle />
+<figure class="m-0 pr-2">
+  <img
+    src="/agent/latin-man-cooking-kitchen.jpg"
+    alt="Chef especialista"
+    class="rounded-lg object-cover w-full max-h-80 shadow-md"
+  />
+</figure>
 
 <!--
 Analogía: agente = quien interpreta el prompt, planifica, actúa y ajusta.
