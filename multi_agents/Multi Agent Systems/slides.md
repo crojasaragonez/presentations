@@ -289,8 +289,6 @@ transition: slide-up
 level: 2
 ---
 
-# ¿Necesita ayuda para empezar?
-
 <div class="absolute top-8 right-8 rounded-xl bg-slate-950/80 px-4 py-3 shadow-lg ring-1 ring-white/10">
   <img
     src="/golabs/logotipo.png"
@@ -299,16 +297,34 @@ level: 2
   />
 </div>
 
-<div class="mx-auto mt-8 max-w-3xl text-2xl leading-relaxed">
-Puedo acompañarle a identificar casos de uso, diseñar pilotos seguros y convertir la IA en capacidades reales para su equipo.
-</div>
+<h1 class="!text-8xl !font-bold !mb-2 bg-gradient-to-r from-sky-400 via-indigo-400 to-fuchsia-400 bg-clip-text text-transparent">
+  ¡Gracias!
+</h1>
 
-<div class="mt-12 text-xl opacity-85">
-  <div class="font-semibold">Carlos Luis Rojas Aragonés</div>
-  <div>CTO · Golabs</div>
-  <div class="mt-4">Hablemos al final o búsqueme en LinkedIn.</div>
+<div class="mt-2 text-xl opacity-70">Conversemos sobre cómo llevar la IA agéntica a su organización.</div>
+
+<div class="mt-12 flex items-center justify-center gap-12">
+  <img
+    src="/golabs/pic.jpeg"
+    alt="Carlos Luis Rojas Aragonés"
+    class="h-56 w-56 rounded-full object-cover shadow-xl ring-4 ring-white/20"
+  />
+
+  <div class="text-left">
+    <div class="text-3xl font-semibold leading-tight">Carlos Luis Rojas Aragonés</div>
+    <div class="mt-2 text-xl opacity-85">CTO · Golabs</div>
+    <div class="mt-6 max-w-xs text-base opacity-70">
+      Escanee el código para guardar mis datos de contacto.
+    </div>
+  </div>
+
+  <img
+    src="/golabs/qr-code.png"
+    alt="Código QR de contacto"
+    class="h-52 w-52 rounded-lg bg-white p-3 shadow-xl"
+  />
 </div>
 
 <!--
-Invitación final: dejar claro que el siguiente paso es conversar si la organización quiere apoyo.
+Cierre cálido: agradecer, dejar identidad clara y abrir un canal directo (QR) para continuar la conversación.
 -->
