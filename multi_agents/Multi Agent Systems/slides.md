@@ -1,11 +1,11 @@
 ---
 theme: seriph
 background: https://cover.sli.dev
-title: IA Agéntica
+title: Agentic AI
 info: |
-  ## IA Agéntica
+  ## Agentic AI
 
-  Una introducción práctica a agentes y multi-agentes de IA usando la analogía de un restaurante.
+  A practical introduction to AI agents and multi-agent systems using a restaurant analogy.
 class: text-center
 drawings:
   persist: false
@@ -16,7 +16,7 @@ duration: 35min
 
 # Agentic AI
 
-La IA deja de conversar y empieza a trabajar.
+AI stops chatting and starts working.
 
 <div class="absolute top-8 right-8 rounded-xl bg-slate-950/80 px-4 py-3 shadow-lg ring-1 ring-white/10">
   <img
@@ -40,33 +40,33 @@ layout: center
 class: text-center
 ---
 
-# ¿Está su organización preparada para la IA?
+# Is your organization ready for AI?
 
 ---
 transition: fade-out
 class: relative
 ---
 
-# Niveles de madurez en IA
+# Levels of AI maturity
 
 <AiMaturityMountains />
 
 <div class="absolute bottom-6 right-8 max-w-md text-right text-[11px] leading-snug opacity-75 sm:text-xs text-slate-600 dark:text-slate-400">
-  Fuente: adaptación de una master class del Dr. George Westerman (MIT).
+  Source: adapted from a master class by Dr. George Westerman (MIT).
 </div>
 
 ---
 transition: fade-out
 ---
 
-# Conceptos
+# Concepts
 
-Para entender qué es *realmente* un agente de IA hace falta tejer muchas piezas: modelos, diseño de interacción, arquitectura, operación y gobernanza. **Solo el vocabulario ya cansa.** En la siguiente diapositiva proponemos una analogía para ordenarlo.
+To understand what an AI agent *really* is, you need to weave together many pieces: models, interaction design, architecture, operations, and governance. **The vocabulary alone is exhausting.** On the next slide we use an analogy to organize it.
 
 <AgentConceptCloud />
 
 <!--
-Enfoque: la nube debe verse abrumadora a propósito; el siguiente bloque simplificará con analogía.
+Approach: the cloud should look overwhelming on purpose; the next block will simplify with an analogy.
 -->
 
 ---
@@ -75,9 +75,9 @@ layoutClass: gap-10 items-center
 transition: fade-out
 ---
 
-# Analogía del restaurante
+# Restaurant analogy
 
-Para ordenar todo ese vocabulario sin ahogarnos en definiciones, vamos a usar **un restaurante** como imagen común: en las siguientes diapositivas veremos cómo encajan ahí los conceptos: **un solo escenario** en lugar de una lista suelta de términos.
+To organize all that vocabulary without drowning in definitions, we will use **a restaurant** as a shared image: in the following slides we will see how the concepts fit there—**one scenario** instead of a loose list of terms.
 
 ::right::
 
@@ -85,23 +85,23 @@ Para ordenar todo ese vocabulario sin ahogarnos en definiciones, vamos a usar **
   <figure class="m-0">
     <img
       src="/restaurant-analogy/chefs-collaborating.jpg"
-      alt="Varios chefs colaborando en una cocina de restaurante ocupada"
+      alt="Several chefs collaborating in a busy restaurant kitchen"
       class="rounded-lg object-cover w-full max-h-50 shadow-md"
     />
-    <figcaption class="text-sm opacity-75 mt-2 text-left">Cocina: equipo de chefs colaborando</figcaption>
+    <figcaption class="text-sm opacity-75 mt-2 text-left">Kitchen: team of chefs collaborating</figcaption>
   </figure>
   <figure class="m-0">
     <img
       src="/restaurant-analogy/dish-plate-wine.jpg"
-      alt="Plato gourmet en cerámica blanca con comida y copa de vino en mesa"
+      alt="Gourmet dish on white ceramic with food and wine glass on a table"
       class="rounded-lg object-cover w-full max-h-50 shadow-md"
     />
-    <figcaption class="text-sm opacity-75 mt-2 text-left">Sala: platillos y bebidas en la mesa</figcaption>
+    <figcaption class="text-sm opacity-75 mt-2 text-left">Dining room: plates and drinks on the table</figcaption>
   </figure>
 </div>
 
 <!--
-Solo presentar el marco; no mapear todavía rol por rol. Fotos: Unsplash (cocina / sala).
+Only introduce the frame; do not map role by role yet. Photos: Unsplash (kitchen / dining room).
 -->
 
 ---
@@ -113,21 +113,21 @@ level: 2
 
 # LLM
 
-En el restaurante, un **LLM** equivale a tener a alguien que **se ha leído, en la práctica, los libros y textos sobre cocina que hay en internet**, como si hubiera absorbido una biblioteca entera de gastronomía en línea. Eso **no reemplaza** la cocina ni el servicio, pero **aporta un valor excepcional**: una base de conocimiento y de lenguaje difícil de igualar con un solo experto humano.
+In the restaurant, an **LLM** is like having someone who has **read, in practice, the books and texts about cooking on the internet**, as if they had absorbed an entire library of gastronomy online. That **does not replace** the kitchen or service, but **adds exceptional value**: a base of knowledge and language that is hard to match with a single human expert.
 
 ::right::
 
 <figure class="m-0 pr-2">
   <img
     src="/llm/cookbooks-stack.jpg"
-    alt="Pila de libros de cocina en una estantería: metáfora del conocimiento textual que condensa un LLM"
+    alt="Stack of cookbooks on a shelf: metaphor for the textual knowledge condensed in an LLM"
     class="rounded-lg object-cover w-full max-h-80 shadow-md"
   />
-  <figcaption class="text-sm opacity-75 mt-2 text-left">Conocimiento de cocina acumulado como en una biblioteca: el tipo de material del que aprende un LLM</figcaption>
+  <figcaption class="text-sm opacity-75 mt-2 text-left">Cooking knowledge accumulated like a library: the kind of material an LLM learns from</figcaption>
 </figure>
 
 <!--
-Primer concepto anclado a la analogía; matizar después limitaciones (no ha “cocinado” cada plato, alucinaciones, etc.) si toca. Imagen: Unsplash (Haberdoedas), libros de cocina.
+First concept anchored to the analogy; clarify later limitations (has not “cooked” every dish, hallucinations, etc.) if needed. Image: Unsplash (Haberdoedas), cookbooks.
 -->
 
 ---
@@ -139,21 +139,21 @@ level: 2
 
 # Prompt
 
-El **prompt** es, en el restaurante, **la orden del cliente**: lo que se pide con palabras en ese momento (clara o ambigua, corta o larga) y que orienta qué debe salir de la cocina (o qué debe responder el equipo). Sin pedido no hay plato concreto; con un pedido mal formulado, el resultado suele decepcionar aunque la cocina sea excelente.
+The **prompt** is, in the restaurant, **the customer's order**: what is asked for in words at that moment (clear or vague, short or long) and that steers what should come out of the kitchen (or what the team should answer). Without an order there is no specific dish; with a poorly phrased order, the result often disappoints even when the kitchen is excellent.
 
 ::right::
 
 <figure class="m-0 pr-2">
   <img
     src="/prompt/customer-order.jpg"
-    alt="Mesero tomando el pedido a una clienta en un bar: la petición explícita que guía el servicio"
+    alt="Server taking a customer's order at a bar: the explicit request that guides service"
     class="rounded-lg object-cover w-full max-h-80 shadow-md"
   />
-  <figcaption class="text-sm opacity-75 mt-2 text-left">El pedido en palabras, equivalente al prompt que recibe el modelo</figcaption>
+  <figcaption class="text-sm opacity-75 mt-2 text-left">The order in words, equivalent to the prompt the model receives</figcaption>
 </figure>
 
 <!--
-Analogía: prompt = instrucción / pedido. Imagen: Unsplash (pedido en restaurante).
+Analogy: prompt = instruction / order. Image: Unsplash (restaurant order).
 -->
 
 ---
@@ -165,27 +165,27 @@ level: 2
 
 # Agent
 
-El **agente** es el rol que, frente al pedido y con el conocimiento a mano, **no se limita a ejecutar un solo gesto**: **interpreta la orden**, **decide qué “receta” (estrategia) aplica**, **organiza los pasos** y **coordina recursos** (ingredientes, tiempo, turnos) hasta encaminar el resultado.
+The **agent** is the role that, faced with the order and with knowledge at hand, **does not limit itself to one single action**: it **interprets the order**, **decides which “recipe” (strategy) applies**, **organizes the steps**, and **coordinates resources** (ingredients, time, shifts) until the outcome is on track.
 
-- **Interpreta** la orden (qué pidió realmente el cliente).
-- **Decide** qué receta o enfoque conviene.
-- **Organiza** la secuencia de pasos.
-- **Coordina** ingredientes, tiempo y carga de trabajo.
+- **Interprets** the order (what the customer really asked for).
+- **Decides** which recipe or approach fits best.
+- **Organizes** the sequence of steps.
+- **Coordinates** ingredients, time, and workload.
 
-**No solo “cocina”**: **piensa y actúa** para cumplir un **objetivo** bajo restricciones reales.
+**Not just “cooking”**: **thinks and acts** to achieve a **goal** under real constraints.
 
 ::right::
 
 <figure class="m-0 pr-2">
   <img
     src="/agent/latin-man-cooking-kitchen.jpg"
-    alt="Chef especialista"
+    alt="Specialist chef"
     class="rounded-lg object-cover w-full max-h-80 shadow-md"
   />
 </figure>
 
 <!--
-Analogía: agente = quien interpreta el prompt, planifica, actúa y ajusta.
+Analogy: agent = who interprets the prompt, plans, acts, and adjusts.
 -->
 
 ---
@@ -197,23 +197,23 @@ level: 2
 
 # Multi-Agents
 
-Los **multi-agentes** son como un **equipo multidisciplinario en cocina**: no hay un solo perfil que lo haga todo. Hay quien domina **salados**, quien lleva **postres y repostería**, quien aporta **otra tradición o estación** (como en un formato tipo ***MasterChef***, con especialidades y pruebas distintas en paralelo) y **todos coordinan** para cumplir **un mismo objetivo** (el servicio, el menú, la experiencia del comensal).
+**Multi-agent** setups are like a **multidisciplinary team in the kitchen**: no single profile does everything. Some excel at **savory**, some lead **pastries and baking**, some bring **another tradition or station** (as in a ***MasterChef***-style format, with specialties and different challenges in parallel), and **everyone coordinates** to meet **one shared goal** (service, the menu, the diner's experience).
 
-Cada “agente” aporta su criterio y sus herramientas; el valor está en **cómo se reparten tareas, se comunican y se alinean** sin trabar la cocina.
+Each “agent” brings its judgment and its tools; the value lies in **how tasks are split, how they communicate, and how they align** without jamming the kitchen.
 
 ::right::
 
 <figure class="m-0 pr-2">
   <img
     src="/multi-agents/chef-group-table.jpg"
-    alt="Grupo de chefs de pie junto a una mesa de trabajo: equipo multidisciplinario reunido"
+    alt="Group of chefs standing by a work table: multidisciplinary team gathered"
     class="rounded-lg object-cover w-full max-h-80 shadow-md"
   />
-  <figcaption class="text-sm opacity-75 mt-2 text-left">Varios perfiles, un mismo equipo, como agentes distintos con un objetivo común</figcaption>
+  <figcaption class="text-sm opacity-75 mt-2 text-left">Several roles, one team—like distinct agents with a common goal</figcaption>
 </figure>
 
 <!--
-Imagen: Unsplash (CET / ceteduvn). https://unsplash.com/photos/group-of-chef-standing-beside-table-47Q3QfM5Eh4
+Image: Unsplash (CET / ceteduvn). https://unsplash.com/photos/group-of-chef-standing-beside-table-47Q3QfM5Eh4
 -->
 
 ---
@@ -223,10 +223,10 @@ transition: fade-out
 level: 2
 ---
 
-# ¿Cómo empiezo?
+# How do I get started?
 
 <div class="mx-auto mt-8 max-w-2xl text-2xl leading-relaxed opacity-85">
-No empiece por la arquitectura: empiece por una decisión operativa concreta.
+Don't start with architecture: start with a concrete operational decision.
 </div>
 
 ---
@@ -234,33 +234,33 @@ transition: fade-out
 level: 2
 ---
 
-# Ideas para empezar a incluir la IA
+# Ideas to start bringing in AI
 
 <div class="grid grid-cols-3 gap-5 pt-6">
   <div v-click class="rounded-xl border border-slate-300/60 p-5 shadow-sm dark:border-white/15 dark:bg-white/5">
-    <div class="text-xl font-bold">1. Reglas</div>
+    <div class="text-xl font-bold">1. Rules</div>
     <p class="mt-3 text-sm leading-relaxed opacity-80">
-      Defina política de uso, datos que no salen del perímetro, revisión humana y responsabilidad.
+      Define usage policy, data that stays inside the perimeter, human review, and accountability.
     </p>
   </div>
 
   <div v-click class="rounded-xl border border-slate-300/60 p-5 shadow-sm dark:border-white/15 dark:bg-white/5">
-    <div class="text-xl font-bold">2. Piloto</div>
+    <div class="text-xl font-bold">2. Pilot</div>
     <p class="mt-3 text-sm leading-relaxed opacity-80">
-      Escoja un caso acotado, visible y de bajo riesgo con voluntarios y budget claro.
+      Pick a bounded, visible, low-risk use case with volunteers and a clear budget.
     </p>
   </div>
 
   <div v-click class="rounded-xl border border-slate-300/60 p-5 shadow-sm dark:border-white/15 dark:bg-white/5">
-    <div class="text-xl font-bold">3. Medición</div>
+    <div class="text-xl font-bold">3. Measurement</div>
     <p class="mt-3 text-sm leading-relaxed opacity-80">
-      Mida tiempo ahorrado, errores detectados y satisfacción del usuario interno.
+      Measure time saved, errors caught, and internal user satisfaction.
     </p>
   </div>
 </div>
 
 <!--
-Puente desde multi-agentes hacia práctica organizacional; ajustar ejemplos a la audiencia (Golabs / sector).
+Bridge from multi-agents to organizational practice; tune examples to the audience (Golabs / sector).
 -->
 
 ---
@@ -270,22 +270,22 @@ transition: fade-out
 level: 2
 ---
 
-# La IA empieza con un primer caso bien escogido
+# AI starts with one well-chosen first use case
 
 <div class="mx-auto mt-8 max-w-3xl text-left text-2xl leading-relaxed">
 
 <v-clicks>
 
-- Un problema real, repetitivo y medible.
-- Datos y límites claros desde el día cero.
-- Personas responsables de validar, aprender y escalar.
+- A real, repetitive, measurable problem.
+- Clear data and boundaries from day one.
+- People responsible for validating, learning, and scaling.
 
 </v-clicks>
 
 </div>
 
 <!--
-Cerrar la parte práctica: no vender una transformación enorme, sino un primer paso gobernado y medible.
+Close the practical part: not selling a huge transformation, but a governed, measurable first step.
 -->
 
 ---
@@ -304,10 +304,10 @@ level: 2
 </div>
 
 <h1 class="!text-8xl !font-bold !mb-2 bg-gradient-to-r from-sky-400 via-indigo-400 to-fuchsia-400 bg-clip-text text-transparent">
-  ¡Gracias!
+  Thank you!
 </h1>
 
-<div class="mt-2 text-xl opacity-70">Conversemos sobre cómo llevar la IA agéntica a su organización.</div>
+<div class="mt-2 text-xl opacity-70">Let's talk about bringing agentic AI to your organization.</div>
 
 <div class="mt-12 flex items-center justify-center gap-12">
   <img
@@ -320,17 +320,17 @@ level: 2
     <div class="text-3xl font-semibold leading-tight">Carlos Luis Rojas Aragonés</div>
     <div class="mt-2 text-xl opacity-85">CTO · Golabs</div>
     <div class="mt-6 max-w-xs text-base opacity-70">
-      Escanee el código para guardar mis datos de contacto.
+      Scan the QR code to save my contact details.
     </div>
   </div>
 
   <img
     src="/golabs/qr-code.png"
-    alt="Código QR de contacto"
+    alt="Contact QR code"
     class="h-52 w-52 rounded-lg bg-white p-3 shadow-xl"
   />
 </div>
 
 <!--
-Cierre cálido: agradecer, dejar identidad clara y abrir un canal directo (QR) para continuar la conversación.
+Warm close: thank you, clear identity, and a direct channel (QR) to continue the conversation.
 -->

@@ -1,34 +1,34 @@
 <script setup lang="ts">
-/** Picos en coordenadas SVG (viewBox alto = 200); menor Y = montaña más alta. */
+/** Peaks in SVG coordinates (viewBox height = 200); lower Y = taller mountain. */
 const levels = [
   {
     level: 0,
-    label: 'Nivel 0',
-    description: 'El uso de la IA está explícitamente prohibido.',
+    label: 'Level 0',
+    description: 'Use of AI is explicitly prohibited.',
     peakY: 168,
     fillClass: 'fill-slate-400/80 dark:fill-slate-600/65',
   },
   {
     level: 1,
-    label: 'Nivel 1',
+    label: 'Level 1',
     description:
-      'Productividad individual: IA generativa en tareas habituales para personas en muchos roles.',
+      'Individual productivity: generative AI in everyday tasks for people in many roles.',
     peakY: 132,
     fillClass: 'fill-slate-500 dark:fill-slate-500',
   },
   {
     level: 2,
-    label: 'Nivel 2',
+    label: 'Level 2',
     description:
-      'Roles y tareas especializados: aplicaciones dirigidas de IA generativa a trabajos concretos.',
+      'Specialized roles and tasks: targeted generative AI applications for specific jobs.',
     peakY: 82,
     fillClass: 'fill-slate-600 dark:fill-slate-400',
   },
   {
     level: 3,
-    label: 'Nivel 3',
+    label: 'Level 3',
     description:
-      'Productos y procesos: mayor autonomía en funcionalidades del producto, la interacción con clientes y los procesos operativos.',
+      'Products and processes: greater autonomy in product features, customer interaction, and operational processes.',
     peakY: 28,
     fillClass: 'fill-slate-800 dark:fill-slate-200',
   },
@@ -39,7 +39,7 @@ const levels = [
   <div
     class="mx-auto mt-2 w-full max-w-5xl px-2"
     role="img"
-    aria-label="Cuatro niveles de madurez en IA como montañas de izquierda a derecha, cada una más alta"
+    aria-label="Four levels of AI maturity as mountains left to right, each taller than the last"
   >
     <div class="flex items-end justify-between gap-2 sm:gap-4 md:gap-6">
       <div
